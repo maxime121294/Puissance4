@@ -1,3 +1,5 @@
+![](http://activitesbebes.com/wp-content/uploads/2014/03/pendu.gif "LE JEU DU PENDU")
+
 #LE JEU DU PENDU   
 
 ##REGLES DU JEU  
@@ -12,7 +14,11 @@ Il s'agit de retrouver un mot choisi aléatoirement par l'ordinateur. Le joueur 
 
 On choisit un mot au hasard dans le dictionnaire. C'est ce mot qui sera le mot à trouver par le joueur.  
 Le joueur peut proposer soit une lettre, soit un mot complet,  soit un abandon,  soit un affichage des règles du jeu.  
-Le joueur a 8 chances de trouver le mot. Lorsqu’une proposition est correcte, le joueur ne perd pas de chance. A partir du dessin suivant :  
+Le joueur a 8 chances de trouver le mot. Lorsqu’une proposition est correcte, le joueur ne perd pas de chance. A partir du dessin suivant :
+
+![Pendu ASCII](http://i.imgur.com/ZviFNrT.png "LE JEU DU PENDU")
+
+
 On affiche dans un premier temps la potence, puis la corde, le visage, le bras gauche, le bras droit, le torse, la jambe gauche et enfin la jambe droite. Une fois le pendu complet révélé, le joueur a perdu la partie.  
 Le joueur fait une proposition. Tant que les conditions de  fin de partie ne sont pas atteintes, le joueur peut faire une nouvelle proposition.  
 
