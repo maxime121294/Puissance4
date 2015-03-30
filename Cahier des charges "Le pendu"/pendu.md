@@ -43,4 +43,5 @@ La partie se termine lorsque :
 
 ###CAHIER DES CHARGES  
 
-Vous devez réaliser un programme qui permet de jouer au pendu. Après chaque partie, l'utilisateur peut éventuellement vouloir rejouer une partie, il faut offrir cette possibilité. Enfin lors de chaque proposition, l'utilisateur doit pouvoir consulter la règle en tapant le caractère ’?’.  
+Vous devez réaliser un programme qui permet de jouer au pendu. Après chaque partie, l'utilisateur peut éventuellement vouloir rejouer une partie, il faut offrir cette possibilité. 
+Enfin lors de chaque proposition, l'utilisateur doit pouvoir consulter la règle en tapant le caractère ’?’.  
