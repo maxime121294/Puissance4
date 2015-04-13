@@ -7,5 +7,6 @@ namespace Power4
 {
     class Player : IPlayer
     {
+        public string name { get; set; }
     }
 }

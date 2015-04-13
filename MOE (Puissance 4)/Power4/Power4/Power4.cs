@@ -28,7 +28,20 @@ namespace Power4
 
         internal void run()
         {
-            throw new NotImplementedException();
+            output.writeLine(":::::::::   ::::::::  :::       ::: :::::::::: :::::::::      :::     ");
+            output.writeLine(":+:    :+: :+:    :+: :+:       :+: :+:        :+:    :+:    :+:      ");
+            output.writeLine("+:+    +:+ +:+    +:+ +:+       +:+ +:+        +:+    +:+   +:+ +:+   ");
+            output.writeLine("+#++:++#+  +#+    +:+ +#+  +:+  +#+ +#++:++#   +#++:++#:   +#+  +:+   ");
+            output.writeLine("+#+        +#+    +#+ +#+ +#+#+ +#+ +#+        +#+    +#+ +#+#+#+#+#+ ");
+            output.writeLine("#+#        #+#    #+#  #+#+# #+#+#  #+#        #+#    #+#       #+#   ");
+            output.writeLine("###         ########    ###   ###   ########## ###    ###       ###   ");
+            output.writeLine("\n\nSaisir le nom du joueur 1 :");
+            p1.name = input.readLine();
+            output.writeLine("Saisir le nom du joueur 2 :");
+            p2.name = input.readLine();
+            output.writeLine(p1.name + " VS " + p2.name + "!!!");
+            output.writeLine("Appuyer sur une touche pour lancer le jeu.");
+            input.readKey();
         }
     }
 }

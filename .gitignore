@@ -5,3 +5,5 @@
 *.sln
 *AssemblyInfo.cs
 MOE (Puissance 4)/Power4/Power4/Power4.csproj
+*.pdb
+*.FileListAbsolute.txt

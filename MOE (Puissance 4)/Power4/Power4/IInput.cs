@@ -7,5 +7,10 @@ namespace Power4
 {
     interface IInput
     {
+        char read();
+
+        void readKey();
+
+        String readLine();
     }
 }
