@@ -8,14 +8,14 @@ Le cahier de recette est constitué de :
 
 
 ##Liste des campagnes de test
-- Au depart, et avant aucune erreur, aucun morceau du pendu n'est affiché
+1. Au depart, et avant aucune erreur, aucun morceau du pendu n'est affiché
 - Lorsque la partie est fini, l'ordinateur doit afficher le mot à trouver (que les joueurs gagnent ou perdent)
 - En cas d'erreur (mot, lettre fausse ou lettre déjà proposée), un bout du pendu s'affiche à l'écran
 - Au bout de 8 erreurs, la partie est terminé. Le pendu complet est affiché.
 - Vérification que le mot proposé par le joueur repond aux differents critères (3-10 lettres, compris dans le dictionnaire)
 - A chaque tour, on indique differents choix au joueur  : 
-  - Le joueur peut proposer une lettre ou un mot  :
-    - On affiche le nombre de lettre à trouver, 
+  1. Le joueur peut proposer une lettre ou un mot  :
+    1. On affiche le nombre de lettre à trouver, 
     - les lettres trouvées 
     - un asterisque est visible sur les lettres restants à trouver
   - Il peut abandonner la partie
