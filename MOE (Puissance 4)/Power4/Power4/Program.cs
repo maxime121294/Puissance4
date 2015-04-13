@@ -9,10 +9,13 @@ namespace Power4
     {
         static void Main(string[] args)
         {
+           int nbRows = 6;
+           int nbCols = 7;
+           IToken empty = new Token();
            IPlayer player1 = new Player();
            IPlayer player2 = new Player();
            IArrayFormatter formatter = new ArrayFormat();
-           IArrayStock stockage = new ArrayStock();
+           IArrayStock stockage = new ArrayStock(nbRows, nbCols, empty);
            CheckEnd checkend = new CheckEnd();
            IOutput output = new ColorOutput();
            IInput input = new KeyboardInput();

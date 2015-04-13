@@ -7,7 +7,8 @@ namespace Power4
 {
     class Token : IToken
     {
-        char value;
+        public char value { get; set; }
+        public ConsoleColor color { get; set; }
         
     }
 }
