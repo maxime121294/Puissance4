@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class ArrayStock
+    class ArrayStock : IArrayStock
     {
     }
 }

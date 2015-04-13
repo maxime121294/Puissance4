@@ -5,7 +5,9 @@ using System.Text;
 
 namespace Power4
 {
-    class Token
+    class Token : IToken
     {
+        char value;
+        
     }
 }
