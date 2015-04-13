@@ -8,9 +8,9 @@ Le cahier de recette est constitué de :
 
 ##Liste des campagnes de test
 1. Au depart, et avant aucune erreur, aucun morceau du pendu et aucune lettre ne sont affichés (seuls des asterisques sont visibles).
-- Lorsque la partie est fini, l'ordinateur doit afficher le mot à trouver (que les joueurs gagnent ou perdent).
 - Au bout de 8 erreurs, la partie est terminé. Le pendu complet est affiché.
-- En cas d'erreur (mot, lettre fausse ou lettre déjà proposée), un bout du pendu s'affiche à l'écran
+- Lorsque la partie est fini, l'ordinateur doit afficher le mot à trouver (que les joueurs gagnent ou perdent).
+- En cas d'erreur (mot, lettre fausse ou lettre déjà proposée), un bout du pendu s'affiche à l'écran.
 - Vérification que le mot proposé par le joueur repond aux differents critères (3-10 lettres, compris dans le dictionnaire)
 - A chaque tour, on indique differents choix au joueur  : 
   1. Le joueur peut proposer une lettre ou un mot  :
@@ -38,5 +38,13 @@ Le cahier de recette est constitué de :
 ### Cas N°3 : "Lorsque la partie est fini, l'ordinateur doit afficher le mot à trouver (que les joueurs gagnent ou perdent)"
 |Scénario nominale |Scénario d'erreur |
 |------------------|------------------|
-|Lorsque le joueur perd, une notification est affichée avec le mot à trouver|                  |
-|Lorsque le joueur gagne, une notification est affichée avec le mot à trouver|
+|Lorsque le joueur perd, une notification est affichée avec le mot à trouver| La notification n'est pas affichée|                 |
+|Lorsque le joueur gagne, une notification est affichée avec le mot à trouver| La notification n'est pas affichée|
+
+### Cas N°4 : "En cas d'erreur (mot, lettre fausse ou lettre déjà proposée), un bout du pendu s'affiche à l'écran"
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Lorsque le joueur propose un mot, s'il est incorrect, un bout du pendu s'affiche| Le mot est validé, la partie est finie et/ou un bout du pendu n'est pas incrémenté|
+|Lorsque le joueur propose une lettre, si elle est incorrecte, un bout du pendu s'affiche| La lettre est validée, le(s) asterisque(s) est(sont) remplacé(s) par la lettre et/ou un bout du pendu n'est pas incrémenté|
+|Lorsque le joueur propose une lettre déjà proposée, un bout du pendu s'affiche | La lettre est validée, le(s) asterisque(s) est(sont) remplacé(s) par la lettre et/ou un bout du pendu n'est pas incrémenté|
+
