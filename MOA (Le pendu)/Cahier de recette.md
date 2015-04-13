@@ -8,12 +8,8 @@ Le cahier de recette est le support pratique des Recetteurs. Il est donc constit
 
 
 ##Liste des campagnes de test
-Voici la liste des différents tests à executer : 
-- 2 joueurs (maximum et minimum) pour commencer pour partie
-- proposition d'un mot ou d'une lettre
-
-
-
+- Proposition de lettre
+- Proposition d'un mot
 ##Fiches descriptives des scénarios
 
 ##Fiches descriptives des tests
