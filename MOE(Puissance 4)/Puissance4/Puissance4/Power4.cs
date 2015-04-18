@@ -46,13 +46,13 @@ namespace Power4
             while (!finParti){
                 output.write(grid);
                 output.writeLine(p1.name+", entrez le numero de colonne où jouer : ");
-                numcol = Convert.ToInt16(input.readLine());
+                numcol = Convert.ToInt16(input.readLine()) - 1;
                 stock.addToken(p1, numcol);
                 grid = format.formatAsAGrid(stock);
                 finParti = Check.checkEnd(p1.nbToken, p2.nbToken, stock);
                 output.write(grid);
                 output.writeLine(p2.name + ", entrez le numero de colonne où jouer : ");
-                numcol = Convert.ToInt16(input.readLine());
+                numcol = Convert.ToInt16(input.readLine()) - 1;
                 stock.addToken(p2, numcol);
                 grid = format.formatAsAGrid(stock);
                 finParti = Check.checkEnd(p1.nbToken, p2.nbToken, stock);

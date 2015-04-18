@@ -60,17 +60,19 @@ namespace Power4
         public bool addToken(IPlayer p, int numcol)
         {
             bool insertionOK = false;
-
-            for (int i =0; i < nbrows; i++)
+            int i = 0;
+            while( i < nbrows && !insertionOK)
             {
-                if (array[i, numcol].value == '.' && !insertionOK)
+                if (array[i, numcol].value == '.')
                 {
-                    array[i, numcol].value = p.tokenStyle.value;
-                    array[i, numcol].color = p.tokenStyle.color;
+                    array[i, numcol] = p.tokenStyle;
                     insertionOK = true;
+                    p.nbToken = p.nbToken - 1;
                 }
+                i++;
             }
             return insertionOK;
         }
+
     }
 }
