@@ -21,7 +21,9 @@ namespace Power4
             {
                 for (int j = 0; j < tabTokens.nbcols; j++)
                 {
+                    Console.ForegroundColor = tabTokens.getValue(i, j).color;
                     result += " " + tabTokens.getValue(i, j).value;
+                    Console.ResetColor();
                 }
                 result += "\n";
             }

@@ -9,8 +9,6 @@ namespace Power4
     {
         char read();
 
-        void readKey();
-
         String readLine();
     }
 }

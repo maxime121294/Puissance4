@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="ArrayFormat.cs" />
     <Compile Include="ArrayStock.cs" />
-    <Compile Include="CheckEnd.cs" />
+    <Compile Include="Check.cs" />
     <Compile Include="ColorOutput.cs" />
     <Compile Include="IArrayFormatter.cs" />
     <Compile Include="IArrayStock.cs" />

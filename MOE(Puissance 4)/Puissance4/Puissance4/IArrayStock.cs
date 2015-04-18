@@ -11,5 +11,7 @@ namespace Power4
         int nbcols { get; set; }
 
         IToken getValue(int row, int col);
+
+        bool addToken(IPlayer p, int numcol);
     }
 }

@@ -8,5 +8,7 @@ namespace Power4
     interface IPlayer
     {
         string name { get; set; }
+        int nbToken { get; set; }
+        IToken tokenStyle { get; set; }
     }
 }

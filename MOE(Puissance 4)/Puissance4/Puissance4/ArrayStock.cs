@@ -56,5 +56,21 @@ namespace Power4
         public IToken getValue (int row, int col){
             return array[row,col];
         }
+
+        public bool addToken(IPlayer p, int numcol)
+        {
+            bool insertionOK = false;
+
+            for (int i =0; i < nbrows; i++)
+            {
+                if (array[i, numcol].value == '.' && !insertionOK)
+                {
+                    array[i, numcol].value = p.tokenStyle.value;
+                    array[i, numcol].color = p.tokenStyle.color;
+                    insertionOK = true;
+                }
+            }
+            return insertionOK;
+        }
     }
 }
