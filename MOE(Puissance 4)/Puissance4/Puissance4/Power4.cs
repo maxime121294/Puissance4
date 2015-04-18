@@ -40,7 +40,11 @@ namespace Power4
             output.writeLine("Saisir le nom du joueur 2 :");
             p2.name = input.readLine();
             output.writeLine(p1.name + " VS " + p2.name + "!!!");
-            output.writeLine("Appuyer sur une touche pour lancer le jeu.");
+            output.writeLine("Appuyer sur une touche pour lancer le jeu.\n");
+            input.readKey();
+            string grid = format.formatAsAGrid(stock);
+            output.write(grid);
+            output.writeLine(p1.name+", entrez le numero de colonne où jouer : ");
             input.readKey();
         }
     }

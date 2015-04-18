@@ -7,5 +7,6 @@ namespace Power4
 {
     interface IArrayFormatter
     {
+        string formatAsAGrid(IArrayStock tab);
     }
 }
