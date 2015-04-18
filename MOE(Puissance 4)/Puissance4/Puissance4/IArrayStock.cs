@@ -7,8 +7,5 @@ namespace Power4
 {
     interface IArrayStock
     {
-        Token[][] array;
-        int nbrow;
-        int nbcol;
     }
 }

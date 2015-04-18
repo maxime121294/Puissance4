@@ -2,8 +2,7 @@
 *.exe*
 *.suo
 *.db
-*.sln
-*AssemblyInfo.cs
-MOE (Puissance 4)/Power4/Power4/Power4.csproj
 *.pdb
 *.FileListAbsolute.txt
+Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\bin\Debug
+Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\obj\Debug
