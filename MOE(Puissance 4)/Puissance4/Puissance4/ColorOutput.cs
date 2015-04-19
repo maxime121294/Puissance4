@@ -16,5 +16,20 @@ namespace Power4
         {
             Console.WriteLine(p);
         }
+
+        public void writeGrid(string grid)
+        {
+            foreach (char c in grid)
+            {
+                if (c == 'x')
+                    Console.ForegroundColor = ConsoleColor.Green;
+                else if (c == '+')
+                    Console.ForegroundColor = ConsoleColor.Red;
+                else
+                    Console.ResetColor();
+                Console.Write(c);
+                Console.ResetColor();
+            }
+        }
     }
 }

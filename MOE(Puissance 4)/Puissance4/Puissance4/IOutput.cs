@@ -10,5 +10,7 @@ namespace Power4
         void write(string p);
 
         void writeLine(string p);
+
+        void writeGrid(string grid);
     }
 }

@@ -39,18 +39,18 @@ namespace Power4
             output.writeLine("Saisir le nom du joueur 2 :");
             p2.name = input.readLine();
             output.writeLine(p1.name + " VS " + p2.name + "!!!");
-            
+
             string grid = format.formatAsAGrid(stock);
             bool finParti = false;
             int numcol;
             while (!finParti){
-                output.write(grid);
+                output.writeGrid(grid);
                 output.writeLine(p1.name+", entrez le numero de colonne où jouer : ");
                 numcol = Convert.ToInt16(input.readLine()) - 1;
                 stock.addToken(p1, numcol);
                 grid = format.formatAsAGrid(stock);
                 finParti = Check.checkEnd(p1.nbToken, p2.nbToken, stock);
-                output.write(grid);
+                output.writeGrid(grid);
                 output.writeLine(p2.name + ", entrez le numero de colonne où jouer : ");
                 numcol = Convert.ToInt16(input.readLine()) - 1;
                 stock.addToken(p2, numcol);
