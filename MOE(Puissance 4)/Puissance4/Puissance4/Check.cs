@@ -10,17 +10,36 @@ namespace Power4
         public static bool checkEnd(int nbTokenJ1, int nbTokenJ2, IArrayStock grilleJeu)
         {
             bool result = false;
-            if (nbTokenJ1 + nbTokenJ2 < 8)
+            // si assez de jetons jouez pour avoir un gagnant 
+            if (!(nbTokenJ1 + nbTokenJ2 < 8))
             {
-                // pas assezde jeton pour avoir un gagnant
-            }
-            //verif grille
-            if (nbTokenJ1 == 0 && nbTokenJ2 == 0)
-            {
-                // fin de partie mais si pas de gagnant a la fin
-                // de la verif 
-            }
+                //verif colonne
+                for (int i = 0; i < grilleJeu.nbcols; i++)
+                {
 
+                }
+                //verif lignes
+                for (int i = 0; i < grilleJeu.nbrows; i++)
+                {
+
+                }
+                //verif diagonal
+                if (nbTokenJ1 == 0 && nbTokenJ2 == 0)
+                {
+                    result = true;
+                }
+            }
+            
+            return result;
+        }
+
+        public static bool checkNumberColonneValide(int numcolonne)
+        {
+            bool result = false;
+            if (numcolonne > 1 && numcolonne < 8)
+            {
+                result = true;
+            }
             return result;
         }
     }
