@@ -35,12 +35,10 @@ namespace Power4
 
         public static bool checkNumberColonneValide(int numcolonne)
         {
-            bool result = false;
-            if (numcolonne > 1 && numcolonne < 8)
-            {
-                result = true;
-            }
-            return result;
+            if (numcolonne > 0 && numcolonne < 8)
+                return true;
+            else
+                return false;
         }
     }
 }
