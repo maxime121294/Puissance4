@@ -57,7 +57,7 @@ Le cahier de recette est constitué de :
 ### Cas N°8 : "A chaque tour, on indique différents choix au joueur : Il peut demander un affichage des règles du jeu"
 |Scénario nominale |Scénario d'erreur |
 |------------------|------------------|
-|Le joueur, par son choix d'aide, voit s'afficher les règles du jeu |Rien ne s'affiche |
+|Le joueur, par son choix d'aide, voit s'afficher les règles du jeu |Rien ne s'affiche à l'écran du joueur|
 | | Le joueur quitte la partie|
 
 ### Cas N°9 : "Lors d'une proposition correcte, si il s'agit d'une lettre, on affiche toutes les occurences de cette lettre dans le mot à trouver"
