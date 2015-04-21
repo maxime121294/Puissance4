@@ -48,3 +48,20 @@ Le cahier de recette est constitué de :
 |Lorsque le joueur propose une lettre, si elle est incorrecte, un bout du pendu s'affiche| La lettre est validée, le(s) asterisque(s) est(sont) remplacé(s) par la lettre et/ou un bout du pendu n'est pas incrémenté|
 |Lorsque le joueur propose une lettre déjà proposée, un bout du pendu s'affiche | La lettre est validée, le(s) asterisque(s) est(sont) remplacé(s) par la lettre et/ou un bout du pendu n'est pas incrémenté|
 
+### Cas N°7 : "A chaque tour, on indique différents choix au joueur : Il peut abandonner la partie"
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Le joueur, par son choix d'abandon, perd la partie | Le joueur gagne la partie |
+|Le joueur, par son choix d'abandon, quitte la partie|`On demande au joueur de proposer une lettre|
+
+### Cas N°8 : "A chaque tour, on indique différents choix au joueur : Il peut demander un affichage des règles du jeu"
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Le joueur, par son choix d'aide, voit s'afficher les règles du jeu |Rien ne s'affiche |
+| | Le joueur quitte la partie|
+
+### Cas N°9 : "Lors d'une proposition correcte, si il s'agit d'une lettre, on affiche toutes les occurences de cette lettre dans le mot à trouver"
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|La lettre proposé par le joueur, s'affiche là où la lettre correspond dans le mot à trouver|La/Les lettre(s) ne s'affiche(nt) pas dans le mot à trouver|
+|Si la lettre a deja été trouvée, un bout du pendu s'affiche|Le pendu n'est pas incrémenté|
