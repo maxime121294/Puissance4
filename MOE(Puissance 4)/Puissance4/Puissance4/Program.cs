@@ -12,8 +12,8 @@ namespace Power4
            int nbRows = 6;
            int nbCols = 7;
            IToken jetonVide = new Token();
-           IToken jetonJ1 = new Token('x', ConsoleColor.Yellow);
-           IToken jetonJ2 = new Token('+', ConsoleColor.Yellow); ;
+           IToken jetonJ1 = new Token('x');
+           IToken jetonJ2 = new Token('+'); ;
            IArrayFormatter formatter = new ArrayFormat();
            IArrayStock stockage = new ArrayStock(nbRows, nbCols, jetonVide);
            IPlayer player1 = new Player();

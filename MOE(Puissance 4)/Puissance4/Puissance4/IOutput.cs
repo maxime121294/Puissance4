@@ -12,5 +12,11 @@ namespace Power4
         void writeLine(string p);
 
         void writeGrid(string grid);
+
+        void resetColor();
+
+        void green();
+
+        void red();
     }
 }

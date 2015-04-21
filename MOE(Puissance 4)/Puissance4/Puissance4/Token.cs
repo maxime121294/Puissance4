@@ -8,7 +8,6 @@ namespace Power4
     class Token : IToken
     {
         private char _value;
-        private ConsoleColor _color;
         public char value
         {
             get
@@ -21,28 +20,14 @@ namespace Power4
                 _value = value;
             }
         }
-        public ConsoleColor color
-        {
-            get
-            {
-                return _color;
-            }
-
-            set
-            {
-                _color = color;
-            }
-        }
 
         public Token() {
             _value = '.';
-            _color = ConsoleColor.White;
         }
 
-        public Token(char valeur, ConsoleColor c)
+        public Token(char valeur)
         {
             _value = valeur;
-            _color = c;
         }
         
     }

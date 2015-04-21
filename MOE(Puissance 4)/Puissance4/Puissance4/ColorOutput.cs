@@ -12,9 +12,29 @@ namespace Power4
             Console.Write(p);
         }
 
+        public void write(char p)
+        {
+            Console.Write(p);
+        }
+
         public void writeLine(string p)
         {
             Console.WriteLine(p);
+        }
+
+        public void resetColor()
+        {
+            Console.ResetColor();
+        }
+
+        public void green()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
+
+        public void red()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
         }
 
         public void writeGrid(string grid)
@@ -22,13 +42,13 @@ namespace Power4
             foreach (char c in grid)
             {
                 if (c == 'x')
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    green();
                 else if (c == '+')
-                    Console.ForegroundColor = ConsoleColor.Red;
+                    red();
                 else
-                    Console.ResetColor();
-                Console.Write(c);
-                Console.ResetColor();
+                    resetColor();
+                write(c);
+                resetColor();
             }
         }
     }

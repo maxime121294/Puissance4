@@ -44,12 +44,8 @@ namespace Power4
             array = new Token[_nbrows,_nbcols];
             
             for (int i = 0; i < _nbrows; i++)
-            {
                 for (int j = 0; j < _nbcols; j++)
-                {
                     array[i,j] = empty;
-                }
-            }
 
         }
 
@@ -60,17 +56,14 @@ namespace Power4
         public bool addToken(IPlayer p, int numcol)
         {
             bool insertionOK = false;
-            int i = 0;
-            while( i < nbrows && !insertionOK)
-            {
+            for(int i = 0; i < nbrows && !insertionOK; i++)
                 if (array[i, numcol].value == '.')
                 {
                     array[i, numcol] = p.tokenStyle;
                     insertionOK = true;
                     p.nbToken = p.nbToken - 1;
                 }
-                i++;
-            }
+
             return insertionOK;
         }
 

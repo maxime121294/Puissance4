@@ -8,6 +8,5 @@ namespace Power4
     interface IToken
     {
         char value {get;set;}
-        ConsoleColor color { get; set; }
     }
 }
