@@ -11,8 +11,8 @@ namespace Power4
         public int nbToken { get; set; }
         public IToken tokenStyle { get; set;}
        
-        public Player(IToken t) {
-            nbToken = 21;
+        public Player(IToken t, int n) {
+            nbToken = n;
             tokenStyle = t;
         }
     }

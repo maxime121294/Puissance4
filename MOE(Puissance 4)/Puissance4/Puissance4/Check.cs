@@ -7,6 +7,9 @@ namespace Power4
 {
     class Check
     {
+        public static int nbRows;
+        public static int nbCols;
+
         public static bool checkEnd(int nbTokenJ1, int nbTokenJ2, IArrayStock grilleJeu)
         {
             bool result = false;
@@ -35,7 +38,7 @@ namespace Power4
 
         public static bool checkNumberColonneValide(int numcolonne)
         {
-            if (numcolonne > 0 && numcolonne < 8)
+            if (numcolonne > 0 && numcolonne < nbCols)
                 return true;
             else
                 return false;

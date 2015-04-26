@@ -9,8 +9,8 @@ namespace Power4
     {
         static void Main(string[] args)
         {
-           int nbRows = 6;
-           int nbCols = 7;
+           Check.nbRows = 6;
+           Check.nbCols = 7;
            IToken jetonVide = new Token();
            IToken jetonJ1 = new Token('x','X',ConsoleColor.Yellow);
            IToken jetonJ2 = new Token('+', 'O', ConsoleColor.Red);
@@ -20,9 +20,9 @@ namespace Power4
            table.Add(jetonJ2);
            
            IArrayFormatter formatter = new ArrayFormat();
-           IArrayStock stockage = new ArrayStock(nbRows, nbCols, jetonVide);
-           IPlayer player1 = new Player(jetonJ1);
-           IPlayer player2 = new Player(jetonJ2);
+           IArrayStock stockage = new ArrayStock(Check.nbRows, Check.nbCols, jetonVide);
+           IPlayer player1 = new Player(jetonJ1, Check.nbRows * Check.nbCols / 2);
+           IPlayer player2 = new Player(jetonJ2, Check.nbRows * Check.nbCols / 2);
            IPlayer[] p = new IPlayer[2];
            p[0] = player1;
            p[1] = player2;
