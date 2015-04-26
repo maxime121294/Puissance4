@@ -7,6 +7,13 @@ namespace Power4
 {
     class ColorOutput : IOutput
     {
+        public List<IToken> table;
+
+        public ColorOutput(List<IToken> list)
+        {
+            table = list;
+        }
+
         public void write(string p)
         {
             Console.Write(p);
@@ -27,27 +34,27 @@ namespace Power4
             Console.ResetColor();
         }
 
-        public void green()
+        public void setForegroundColor(ConsoleColor color)
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-        }
-
-        public void red()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = color;
         }
 
         public void writeGrid(string grid)
         {
-            foreach (char c in grid)
+            foreach (Object c in grid)
             {
-                if (c == 'x')
-                    green();
-                else if (c == '+')
-                    red();
-                else
-                    resetColor();
-                write(c);
+                char i = (char) c;
+                int index = table.FindIndex( delegate(IToken bk)
+                                {
+                                    return bk.value == (char)c;
+                                }
+            );
+                if (index>-1)
+                {
+                    setForegroundColor(table.ElementAt(index).color);
+                    i = table.ElementAt(index).icon;
+                }
+                write(i);
                 resetColor();
             }
         }

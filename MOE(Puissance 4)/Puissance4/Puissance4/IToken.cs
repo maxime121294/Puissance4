@@ -7,6 +7,8 @@ namespace Power4
 {
     interface IToken
     {
-        char value {get;set;}
+        char value { get; set; }
+        char icon { get; set; }
+        ConsoleColor color { get; set; }
     }
 }
