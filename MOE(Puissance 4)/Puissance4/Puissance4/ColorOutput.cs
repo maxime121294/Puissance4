@@ -58,5 +58,10 @@ namespace Power4
                 resetColor();
             }
         }
+
+        public void Clean()
+        {
+            Console.Clear();
+        }
     }
 }

@@ -21,14 +21,15 @@ namespace Power4
            
            IArrayFormatter formatter = new ArrayFormat();
            IArrayStock stockage = new ArrayStock(nbRows, nbCols, jetonVide);
-           IPlayer player1 = new Player();
-           player1.tokenStyle = jetonJ1;
-           IPlayer player2 = new Player();
-           player2.tokenStyle = jetonJ2;
+           IPlayer player1 = new Player(jetonJ1);
+           IPlayer player2 = new Player(jetonJ2);
+           IPlayer[] p = new IPlayer[2];
+           p[0] = player1;
+           p[1] = player2;
            IOutput output = new ColorOutput(table);
            IInput input = new KeyboardInput();
-           Power4 p = new Power4(player1, player2, formatter, stockage, output, input);
-           p.run();
+           Power4 m = new Power4(p, formatter, stockage, output, input);
+           m.run();
         }
     }
 }

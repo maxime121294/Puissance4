@@ -16,5 +16,7 @@ namespace Power4
         void resetColor();
 
         void setForegroundColor(ConsoleColor c);
+
+        void Clean();
     }
 }

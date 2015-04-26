@@ -7,17 +7,15 @@ namespace Power4
 {
     class Power4
     {
-        private IPlayer p1;
-        private IPlayer p2;
         private IArrayFormatter format;
         private IArrayStock stock;
         private IOutput output;
         private IInput input;
+        private IPlayer[] players;
 
-        public Power4(IPlayer p1, IPlayer p2, IArrayFormatter format, IArrayStock stock, IOutput output, IInput input)
+        public Power4(IPlayer[] p, IArrayFormatter format, IArrayStock stock, IOutput output, IInput input)
         {
-            this.p1 = p1;
-            this.p2 = p2;
+            this.players = p;
             this.format = format;
             this.stock = stock;
             this.output = output;
@@ -26,38 +24,43 @@ namespace Power4
 
         internal void run()
         {
+            title();
+            for (int i = 0; i < players.Length; i++)
+            {
+                output.writeLine("Saisir le nom du joueur "+(i+1)+" :");
+                players[i].name = input.readLine();
+            }
+            int currentPlayer = 0;
+            string grid = format.formatAsAGrid(stock);
+            bool finParti = false;
+            int numcol;
+            while (!finParti)
+            {
+                output.Clean();
+                output.writeGrid(grid);
+                output.writeLine(players[currentPlayer].name+", entrez le numero de colonne où jouer : ");
+                numcol = Convert.ToInt16(input.readLine()) - 1;
+                stock.addToken(players[currentPlayer], numcol);
+                grid = format.formatAsAGrid(stock);
+                finParti = Check.checkEnd(players[currentPlayer].nbToken, players[otherPlayer(currentPlayer)].nbToken, stock);
+                currentPlayer = otherPlayer(currentPlayer);
+            }
+        }
+        private int otherPlayer(int player)
+        {
+            return (player + 1) % players.Length;
+        }
+
+        private void title()
+        {
             output.writeLine(":::::::::   ::::::::  :::       ::: :::::::::: :::::::::      :::     ");
             output.writeLine(":+:    :+: :+:    :+: :+:       :+: :+:        :+:    :+:    :+:      ");
             output.writeLine("+:+    +:+ +:+    +:+ +:+       +:+ +:+        +:+    +:+   +:+ +:+   ");
             output.writeLine("+#++:++#+  +#+    +:+ +#+  +:+  +#+ +#++:++#   +#++:++#:   +#+  +:+   ");
             output.writeLine("+#+        +#+    +#+ +#+ +#+#+ +#+ +#+        +#+    +#+ +#+#+#+#+#+ ");
             output.writeLine("#+#        #+#    #+#  #+#+# #+#+#  #+#        #+#    #+#       #+#   ");
-            output.writeLine("###         ########    ###   ###   ########## ###    ###       ###   ");
-            output.writeLine("\n\nSaisir le nom du joueur 1 :");
-            p1.name = input.readLine();
-           
-            output.writeLine("Saisir le nom du joueur 2 :");
-            p2.name = input.readLine();
-            output.writeLine(p1.name + " VS " + p2.name + "!!!");
-
-            string grid = format.formatAsAGrid(stock);
-            bool finParti = false;
-            int numcol;
-            while (!finParti){
-                output.writeGrid(grid);
-                output.writeLine(p1.name+", entrez le numero de colonne où jouer : ");
-                numcol = Convert.ToInt16(input.readLine()) - 1;
-                stock.addToken(p1, numcol);
-                grid = format.formatAsAGrid(stock);
-                finParti = Check.checkEnd(p1.nbToken, p2.nbToken, stock);
-                output.writeGrid(grid);
-                output.writeLine(p2.name + ", entrez le numero de colonne où jouer : ");
-                numcol = Convert.ToInt16(input.readLine()) - 1;
-                stock.addToken(p2, numcol);
-                grid = format.formatAsAGrid(stock);
-                finParti = Check.checkEnd(p1.nbToken, p2.nbToken, stock);
-            }
-            
+            output.writeLine("###         ########    ###   ###   ########## ###    ###       ###   \n");
         }
+
     }
 }
