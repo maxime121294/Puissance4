@@ -34,13 +34,27 @@ namespace Power4
             string grid = format.formatAsAGrid(stock);
             bool finParti = false;
             int numcol;
+            bool test;
             while (!finParti)
             {
                 output.Clean();
                 output.writeGrid(grid);
-                output.writeLine(players[currentPlayer].name+", entrez le numero de colonne où jouer : ");
-                numcol = Convert.ToInt16(input.readLine()) - 1;
-                stock.addToken(players[currentPlayer], numcol);
+                while (true)
+                {
+                    output.writeLine(players[currentPlayer].name+", entrez le numero de colonne où jouer : ");
+                    try
+                    {
+                        numcol = Convert.ToInt16(input.readLine()) - 1;
+                    }
+                    catch (FormatException e)
+                    {
+                        numcol = -1;
+                    }
+                    test = stock.addToken(players[currentPlayer], numcol);
+                    if (test)
+                        break;
+                    output.writeLine("Valeur incorrecte.");
+                }
                 grid = format.formatAsAGrid(stock);
                 finParti = Check.checkEnd(players[currentPlayer].nbToken, players[otherPlayer(currentPlayer)].nbToken, stock);
                 currentPlayer = otherPlayer(currentPlayer);

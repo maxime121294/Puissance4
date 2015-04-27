@@ -56,6 +56,9 @@ namespace Power4
         public bool addToken(IPlayer p, int numcol)
         {
             bool insertionOK = false;
+            //Si le numero saisi est hors tableau.
+            if (numcol >= nbcols || numcol < 0)
+                return insertionOK;
             for(int i = 0; i < nbrows && !insertionOK; i++)
                 if (array[i, numcol].value == '.')
                 {
