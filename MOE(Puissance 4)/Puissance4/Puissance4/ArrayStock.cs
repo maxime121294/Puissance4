@@ -50,23 +50,24 @@ namespace Power4
         }
 
         public IToken getValue (int row, int col){
-            if (row >= nbrows || col >= nbcols)
+            if (row >= nbrows || col >= nbcols || col < 0 || row < 0)
                 return null;
             return array[row,col];
         }
 
-        public bool addToken(IPlayer p, int numcol)
+        public int addToken(IPlayer p, int numcol)
         {
-            bool insertionOK = false;
+            int insertionOK = -1;
             //Si le numero saisi est hors tableau.
             if (numcol >= nbcols || numcol < 0)
                 return insertionOK;
-            for(int i = 0; i < nbrows && !insertionOK; i++)
+            for(int i = 0; i < nbrows; i++)
                 if (array[i, numcol].value == '.')
                 {
                     array[i, numcol] = p.tokenStyle;
-                    insertionOK = true;
+                    insertionOK = i;
                     p.nbToken = p.nbToken - 1;
+                    break;
                 }
 
             return insertionOK;

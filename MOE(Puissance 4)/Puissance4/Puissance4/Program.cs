@@ -21,11 +21,16 @@ namespace Power4
            
            IArrayFormatter formatter = new ArrayFormat();
            IArrayStock stockage = new ArrayStock(Check.nbRows, Check.nbCols, jetonVide);
-           IPlayer player1 = new Player(jetonJ1, Check.nbRows * Check.nbCols / 2);
-           IPlayer player2 = new Player(jetonJ2, Check.nbRows * Check.nbCols / 2);
+           IIterator[] iterator = new IIterator[4];
+           iterator[0] = new Iterator(0, 1, stockage);
+           iterator[1] = new Iterator(1, 0, stockage);
+           iterator[2] = new Iterator(1, 1, stockage);
+           iterator[3] = new Iterator(1, -1, stockage);
+           Check.iterators = iterator;
+           Check.empty = jetonVide;
            IPlayer[] p = new IPlayer[2];
-           p[0] = player1;
-           p[1] = player2;
+           p[0] = new Player(jetonJ1, Check.nbRows * Check.nbCols / 2);
+           p[1] = new Player(jetonJ2, Check.nbRows * Check.nbCols / 2);
            IOutput output = new ColorOutput(table);
            IInput input = new KeyboardInput();
            Power4 m = new Power4(p, formatter, stockage, output, input);

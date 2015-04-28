@@ -34,7 +34,7 @@ namespace Power4
             string grid = format.formatAsAGrid(stock);
             bool finParti = false;
             int numcol;
-            bool test;
+            int impactLine = -1;
             while (!finParti)
             {
                 output.Clean();
@@ -50,13 +50,13 @@ namespace Power4
                     {
                         numcol = -1;
                     }
-                    test = stock.addToken(players[currentPlayer], numcol);
-                    if (test)
+                    impactLine = stock.addToken(players[currentPlayer], numcol);
+                    if (impactLine > -1)
                         break;
                     output.writeLine("Valeur incorrecte.");
                 }
                 grid = format.formatAsAGrid(stock);
-                finParti = Check.checkEnd(players[currentPlayer].nbToken, players[otherPlayer(currentPlayer)].nbToken, stock);
+                finParti = Check.checkEnd(impactLine, numcol, stock);
                 currentPlayer = otherPlayer(currentPlayer);
             }
         }
