@@ -12,8 +12,8 @@ namespace Power4
            Check.nbRows = 6;
            Check.nbCols = 7;
            IToken jetonVide = new Token();
-           IToken jetonJ1 = new Token('x','X',ConsoleColor.Yellow);
-           IToken jetonJ2 = new Token('+', 'O', ConsoleColor.Red);
+           IToken jetonJ1 = new Token('+','X',ConsoleColor.Yellow);
+           IToken jetonJ2 = new Token('-', 'O', ConsoleColor.Red);
            List<IToken> table = new List<IToken>();
            table.Add(jetonVide);
            table.Add(jetonJ1);

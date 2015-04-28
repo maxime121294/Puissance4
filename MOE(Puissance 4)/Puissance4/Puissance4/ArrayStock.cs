@@ -50,6 +50,8 @@ namespace Power4
         }
 
         public IToken getValue (int row, int col){
+            if (row >= nbrows || col >= nbcols)
+                return null;
             return array[row,col];
         }
 

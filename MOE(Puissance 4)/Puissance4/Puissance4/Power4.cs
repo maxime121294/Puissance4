@@ -46,7 +46,7 @@ namespace Power4
                     {
                         numcol = Convert.ToInt16(input.readLine()) - 1;
                     }
-                    catch (FormatException e)
+                    catch (FormatException)
                     {
                         numcol = -1;
                     }

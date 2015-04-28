@@ -10,5 +10,7 @@ namespace Power4
         char value { get; set; }
         char icon { get; set; }
         ConsoleColor color { get; set; }
+
+        bool Equals(IToken t);
     }
 }

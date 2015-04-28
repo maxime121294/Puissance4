@@ -59,5 +59,10 @@ namespace Power4
             _icon = icone;
             _color = couleur;
         }
+
+        public bool Equals(IToken t)
+        {
+            return t.value == _value;
+        }
     }
 }
