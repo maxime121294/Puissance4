@@ -16,60 +16,68 @@ namespace Power4
         {
             foreach(IIterator it in iterators)
             {
-                Console.WriteLine("[" + it.x + "," + it.y + "]");
                 // On initialise et on change le vecteur.
-                IToken previousToken = null;
-                IToken currentToken = grilleJeu.getValue(impactRow, impactCol);
-                int chainSize1 = -1;
-                int chainSize2 = -1;
+                IToken previousToken = grilleJeu.getValue(impactRow, impactCol);
+                IToken currentToken = null;
+                int chainSize1 = 0;
+                int chainSize2 = 0;
                 int x = 0;
                 int y = 0;
                 if ((impactRow < grilleJeu.nbrows && impactCol < grilleJeu.nbcols))
                 {
                     y = impactRow;
                     x = impactCol;
-                    Console.WriteLine("Suivants");
-                    do
+                    while (true)
                     {
-                        previousToken = currentToken;
-                        Console.WriteLine("Nous sommes en [" + x + "," + y + "]");
-                        Console.WriteLine("Le jeton est " + previousToken.value);
                         // On vérifie les jetons qui suivent.
-                        chainSize1++;
-                        if (x + it.x >= nbRows || y + it.y >= nbCols || x + it.x < 0 || y + it.y < 0)
+                        if ((x + it.x) >= nbCols || (y + it.y) >= nbRows || (x + it.x) < 0 || (y + it.y) < 0)
+                        {
                             break;
-                        currentToken = it.next(y, x);
+                        }
+                        currentToken = it.next(x, y);
                         if (currentToken == null || currentToken.Equals(empty))
+                        {
                             break;
+                        }
                         x += it.x;
                         y += it.y;
-                        Console.WriteLine("Nous allons en [" + x + "," + y + "]");
-                        Console.WriteLine("Le jeton est " + currentToken.value);
+                        if (previousToken.Equals(currentToken))
+                        {
+                            chainSize1++;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
-                    while (previousToken.Equals(currentToken));
                     y = impactRow;
                     x = impactCol;
-                    currentToken = grilleJeu.getValue(impactRow, impactCol);
-                    Console.WriteLine("Précédents");
-                    do
+                    previousToken = grilleJeu.getValue(impactRow, impactCol);
+                    while(true)
                     {
-                        previousToken = currentToken;
-                        Console.WriteLine("Nous sommes en [" + x + "," + y + "]");
-                        Console.WriteLine("Le jeton est " + previousToken.value);
                         // On vérifie les jetons qui précédent.
-                        chainSize2++;
-                        if (x - it.x >= nbRows || y - it.y >= nbCols || x - it.x < 0 || y - it.y < 0)
+                        if ((x - it.x) >= nbCols || (y - it.y) >= nbRows || (x - it.x) < 0 || (y - it.y) < 0)
+                        {
                             break;
-                        currentToken = it.previous(y, x);
+                        }
+                        currentToken = it.previous(x, y);
                         if (currentToken == null || currentToken.Equals(empty))
+                        {
                             break;
+                        }
                         x -= it.x;
                         y -= it.y;
+                        if (previousToken.Equals(currentToken))
+                        {
+                            chainSize2++;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
-                    while (previousToken.Equals(currentToken));
-                    Console.ReadKey();
                     // On fait la somme des deux, si c'est supérieur ou égal à 4, le joueur a gagné.
-                    if (chainSize1 + chainSize2 >= 4)
+                    if (chainSize1 + chainSize2 >= 3)
                         return true;
                 }
             }

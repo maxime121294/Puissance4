@@ -42,7 +42,6 @@ namespace Power4
             _nbrows = nbr;
             _nbcols = nbc;
             array = new Token[_nbrows,_nbcols];
-            
             for (int i = 0; i < _nbrows; i++)
                 for (int j = 0; j < _nbcols; j++)
                     array[i,j] = empty;
@@ -51,7 +50,9 @@ namespace Power4
 
         public IToken getValue (int row, int col){
             if (row >= nbrows || col >= nbcols || col < 0 || row < 0)
+            {
                 return null;
+            }
             return array[row,col];
         }
 
