@@ -48,6 +48,27 @@ Le cahier de recette est constitué de :
 |Lorsque le joueur propose une lettre, si elle est incorrecte, un bout du pendu s'affiche| La lettre est validée, le(s) asterisque(s) est(sont) remplacé(s) par la lettre et/ou un bout du pendu n'est pas incrémenté|
 |Lorsque le joueur propose une lettre déjà proposée, un bout du pendu s'affiche | La lettre est validée, le(s) asterisque(s) est(sont) remplacé(s) par la lettre et/ou un bout du pendu n'est pas incrémenté|
 
+### Cas N°5 : "Vérification que le mot proposé par le joueur repond aux differents critères (3-10 lettres, compris dans le dictionnaire)"
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Lorsque le joueur propose un mot, s'il contient moins de 3 ou plus de 10 lettres, la proposition est comptée comme incorrecte| Le mot est validé et la partie est gagnée|
+|Lorsque le joueur propose un mot ou l'ensemble de lettres constituant ce mot, il doit être dans le dictionnaire français. S'il n'est pas dans le dictionnaire, la proposition est incorrecte | le mot est validée et la partie est gagnée |
+
+### Cas N°6.i.a : "A chaque tour, on indique differents choix au joueur : pendant que le joueur propose une lettre ou un mot, le nombre de lettres à trouver est affiché "
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Dans chaque tour, le joueur peut connaître le nombre de lettres restant à trouver. Le nombre de lettres à trouver diminue à chaque fois qu'il trouve une bonne lettre dans le mot | Le nombre de lettres à trouver ne s'affiche pas. Le nombre de lettres à trouver est fixe malgré la ou les bonnes réponses reçues précédemment|
+
+### Cas N°6.i.b : "A chaque tour, on indique differents choix au joueur : pendant le jeu, on affiche les lettres trouvées "
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Dans chaque tour, le joueur peut connaître les lettres trouvées. Les lettres trouvées remplacent les astérisques, s'affichent à l'écran et sont sauvegardées pour le prochain tour| Les lettres trouvées ne s'affichent pas et ne sont pas comptabilisées pour le prochain tour|
+
+### Cas N°6.i.c : "A chaque tour, on indique differents choix au joueur : pendant le jeu, un asterisque est visible sur les lettres restantes à trouver "
+|Scénario nominale |Scénario d'erreur |
+|------------------|------------------|
+|Dans chaque tour, le joueur peut connaître les lettres non trouvées : Les lettres non trouvées sont affichées avec des astérisques. Si une lettre est trouvée, l'astérisque est remplacé par la lettre correspondante| Affichage d'un autre caractère que l'astérisque sur une lettre non trouvée (vide, lettre, etc.)|
+
 ### Cas N°7 : "A chaque tour, on indique différents choix au joueur : Il peut abandonner la partie"
 |Scénario nominale |Scénario d'erreur |
 |------------------|------------------|
