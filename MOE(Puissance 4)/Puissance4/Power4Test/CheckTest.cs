@@ -83,6 +83,7 @@ namespace Power4Test
             int impactRow = 0; // TODO: initialisez à une valeur appropriée
             int impactCol = 0; // TODO: initialisez à une valeur appropriée
             IArrayStock grilleJeu = null; // TODO: initialisez à une valeur appropriée
+            
             bool expected = false; // TODO: initialisez à une valeur appropriée
             bool actual;
             actual = Check.checkEnd(impactRow, impactCol, grilleJeu);
