@@ -17,7 +17,7 @@ namespace Power4Test
             IArrayStock tableau = new ArrayStock(10, 10, jeton);
             IPlayer player = new Player(jeton, 10);
 
-            int solution;
+            int solution = tableau.addToken(player, 15);
 
             Assert.AreEqual(-1, solution);
         }
