@@ -80,12 +80,21 @@ namespace Power4Test
         [TestMethod()]
         public void checkEndTest()
         {
-            int impactRow = 0; // TODO: initialisez à une valeur appropriée
-            int impactCol = 0; // TODO: initialisez à une valeur appropriée
-            IArrayStock grilleJeu = null; // TODO: initialisez à une valeur appropriée
+
+            IToken empty = new Token();
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+
+            IPlayer player = new Player(plein, 10);
+
+
+            int impactRow = 1; // TODO: initialisez à une valeur appropriée
+            int impactCol = 2; // TODO: initialisez à une valeur appropriée
+            IArrayStock grilleJeu = new ArrayStock(4,4, empty); // TODO: initialisez à une valeur appropriée
+
             bool expected = false; // TODO: initialisez à une valeur appropriée
             bool actual;
             actual = Check.checkEnd(impactRow, impactCol, grilleJeu);
+
             Assert.AreEqual(expected, actual);
             Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }

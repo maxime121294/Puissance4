@@ -12,6 +12,7 @@ namespace Power4
         public static IIterator[] iterators;
         public static IToken empty;
 
+        // Vérifie si la partie est finie
         public static bool checkEnd(int impactRow, int impactCol, IArrayStock grilleJeu)
         {
             foreach(IIterator it in iterators)
