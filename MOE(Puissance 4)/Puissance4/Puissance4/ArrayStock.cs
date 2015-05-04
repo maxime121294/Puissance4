@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class ArrayStock : IArrayStock
+    public class ArrayStock : IArrayStock
     {
         public IToken[,] array;
         private int _nbrows;

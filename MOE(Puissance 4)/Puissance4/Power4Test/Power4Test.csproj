@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ArrayStock.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Puissance4\Puissance4Studio2010.csproj">

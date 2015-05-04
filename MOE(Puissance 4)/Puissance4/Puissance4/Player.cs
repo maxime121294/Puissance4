@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class Player : IPlayer
+    public class Player : IPlayer
     {
         public string name { get; set; }
         public int nbToken { get; set; }
