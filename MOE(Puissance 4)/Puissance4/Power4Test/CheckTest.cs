@@ -85,17 +85,19 @@ namespace Power4Test
 
             IPlayer player = new Player(plein, 10);
 
+            Coordonnees coor = new Coordonnees(1, 2);
 
-            int impactRow = 1; // TODO: initialisez à une valeur appropriée
-            int impactCol = 2; // TODO: initialisez à une valeur appropriée
             IArrayStock grilleJeu = new ArrayStock(4,4, empty); // TODO: initialisez à une valeur appropriée
 
-            bool expected = false; // TODO: initialisez à une valeur appropriée
+            grilleJeu.addToken(player, 4);
+            grilleJeu.addToken(player, 4);
+            grilleJeu.addToken(player, 4);
+            grilleJeu.addToken(player, 4);
+            bool expected = true; 
             bool actual;
-            actual = Check.checkEnd(impactRow, impactCol, grilleJeu);
+            actual = Check.checkEnd(coor, grilleJeu);
 
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
