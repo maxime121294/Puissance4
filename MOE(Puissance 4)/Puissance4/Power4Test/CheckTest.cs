@@ -80,7 +80,6 @@ namespace Power4Test
         [TestMethod()]
         public void checkEndTest()
         {
-
             IToken empty = new Token();
             IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
 

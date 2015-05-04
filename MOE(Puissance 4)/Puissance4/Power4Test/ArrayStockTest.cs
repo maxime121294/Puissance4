@@ -10,23 +10,7 @@ namespace Power4Test
     [TestClass]
     public class ArrayStockTest
     {
-        [TestMethod]
-        public void addToken()
-        {
-            IToken empty = new Token();
-            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
-            
-            ArrayStock tableau = new ArrayStock(10, 10, empty);
-            IPlayer player = new Player(plein, 10);
-
-            int solution = tableau.addToken(player, 15);
-            Assert.AreEqual(-1, solution);
-
-            ArrayStock tableauPlein = new ArrayStock(10, 10, plein);
-            int TokenPlein = tableauPlein.addToken(player, 9);
-            Assert.AreNotEqual(-1, TokenPlein);
-            Assert.AreEqual(-3, TokenPlein);
-        }
+        
 
         /// <summary>
         ///Test pour Constructeur ArrayStock
@@ -47,17 +31,22 @@ namespace Power4Test
         [TestMethod()]
         public void addTokenTest()
         {
-            int nbr = 0; // TODO: initialisez à une valeur appropriée
-            int nbc = 0; // TODO: initialisez à une valeur appropriée
-            IToken empty = null; // TODO: initialisez à une valeur appropriée
-            ArrayStock target = new ArrayStock(nbr, nbc, empty); // TODO: initialisez à une valeur appropriée
-            IPlayer p = null; // TODO: initialisez à une valeur appropriée
-            int numcol = 0; // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
-            int actual;
-            actual = target.addToken(p, numcol);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            IToken empty = new Token();
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+
+            ArrayStock tableau = new ArrayStock(10, 10, empty);
+            IPlayer player = new Player(plein, 10);
+
+            /* Si le jeton est en dehors du tableau */
+            int solution = tableau.addToken(player, 15);
+            Assert.AreEqual(-1, solution);
+
+            /* Si Le tableau est rempli */
+            ArrayStock tableauPlein = new ArrayStock(10, 10, plein);
+            int TokenPlein = tableauPlein.addToken(player, 9);
+            Assert.AreNotEqual(-1, TokenPlein);
+            Assert.AreEqual(-3, TokenPlein);
         }
 
         /// <summary>
