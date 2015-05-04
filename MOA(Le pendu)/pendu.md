@@ -45,3 +45,7 @@ La partie se termine lorsque :
 
 Vous devez réaliser un programme qui permet de jouer au pendu. Après chaque partie, l'utilisateur peut éventuellement vouloir rejouer une partie, il faut offrir cette possibilité. 
 Enfin lors de chaque proposition, l'utilisateur doit pouvoir consulter les règles.  
+
+###FEATURE SUPPLÉMENTAIRE
+
+A la fin d'une partie, il faut donner la possibilité à l'utilisateur de rejouer. Lorsqu'une nouvelle partie est relancée, il ne faut pas retomber sur les mêmes mots des parties précédentes jusqu'à épuisement du dictionnaire. Si tous les mots du dictionnaire ont été joués, on peut alors rejouer tous les mots du dictionnaire à nouveau.
