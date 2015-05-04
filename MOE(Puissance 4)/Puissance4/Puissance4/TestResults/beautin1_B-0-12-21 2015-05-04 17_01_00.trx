@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="01460ced-1d20-4152-90bb-2fc220b11024" name="beautin1@B-0-12-21 2015-05-04 17:01:00" runUser="IUTPARIS\beautin1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125361ef-c43f-44fa-87c1-6b1fd96a954f">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="beautin1_B-0-12-21 2015-05-04 17_01_00">
+      <DeploymentItem filename="Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\bin\Debug\ConsoleApplication1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T17:01:00.3026603+02:00" queuing="2015-05-04T17:01:00.4376603+02:00" start="2015-05-04T17:01:00.4706603+02:00" finish="2015-05-04T17:01:03.9386603+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="58" executed="58" passed="1" error="0" failed="35" timeout="0" aborted="0" inconclusive="22" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="nbrowsTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="690ae81b-824b-0eb8-fe9e-62e111ffaa9b">
+      <Execution id="f7d52bc6-751f-4845-9831-e6eb7a2121c6" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IArrayStockTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nbrowsTest" />
+    </UnitTest>
+    <UnitTest name="readLineTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="8dfb3681-81bc-9348-0305-bc161acc365d">
+      <Execution id="7e0ae4f4-7ded-4c50-a97b-912f664bb9fc" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.KeyboardInputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readLineTest" />
+    </UnitTest>
+    <UnitTest name="EqualsTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="088902a6-cbab-c572-008e-2fb27496e40c">
+      <Execution id="a5798d71-2d80-4267-b827-8996aa6b56f7" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ITokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EqualsTest" />
+    </UnitTest>
+    <UnitTest name="sTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="2f2f41b3-79f0-16ca-468e-2d57f846fdd4">
+      <Execution id="d345a479-c925-4ce5-baf6-9a3e030f7f95" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="sTest" />
+    </UnitTest>
+    <UnitTest name="readTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="d564b3fc-4c4b-4fc5-9799-cf283ee5d0f3">
+      <Execution id="da4f2d89-710f-4de8-877f-d9ff695422f4" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.KeyboardInputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readTest" />
+    </UnitTest>
+    <UnitTest name="readLineTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="005e610b-b44c-b091-5f74-8ef9a3592aad">
+      <Execution id="29de42ce-1eb1-49e2-bb83-05ff8221fca7" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IInputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readLineTest" />
+    </UnitTest>
+    <UnitTest name="writeGridTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="c708a67b-4d0c-be36-5cdc-4bcd26026497">
+      <Execution id="eaf9f584-19d2-4800-b08f-4aa5477e7c6b" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeGridTest" />
+    </UnitTest>
+    <UnitTest name="tokenStyleTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="eed219ad-c1dd-0377-e46e-9330a95a5d3c">
+      <Execution id="34f4879d-e6f1-4ec9-abda-3db1efc3467b" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.PlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tokenStyleTest" />
+    </UnitTest>
+    <UnitTest name="CheckConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="4ff155cf-6cd8-6bf7-9f61-48e140fd6269">
+      <Execution id="3c908515-206a-4f60-b837-9cf1cb5a091e" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.CheckTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ColorOutputConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="613ca9fe-c298-4d9e-85ec-1ba5cd4b955f">
+      <Execution id="47b565f9-f9f8-4d74-8775-bc1dd8fbac9a" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ColorOutputConstructorTest" />
+    </UnitTest>
+    <UnitTest name="writeTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="2d115d87-eada-fd38-c0ac-4ace49c290e9">
+      <Execution id="2afc2cbd-6768-479b-a6c3-04e83ed647fb" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeTest" />
+    </UnitTest>
+    <UnitTest name="resetColorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="4430f9f4-44b5-fe1f-6ce0-f3e182d76dd3">
+      <Execution id="997475f0-1fe3-4f51-b680-71d832c96bb1" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="resetColorTest" />
+    </UnitTest>
+    <UnitTest name="addTokenTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="0a38bf22-73bf-b1ed-f889-97a10c50e097">
+      <Execution id="f4c86569-010d-4953-9833-9b5be0b7310e" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ArrayStockTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="addTokenTest" />
+    </UnitTest>
+    <UnitTest name="nextTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="06b3d48c-7219-2943-fac1-ec484245d136">
+      <Execution id="9adea15b-6305-41f0-b837-f164c5b99e4c" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IIteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nextTest" />
+    </UnitTest>
+    <UnitTest name="addTokenTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="66ab54a3-219d-dd31-4e14-e009f6917a4e">
+      <Execution id="db374099-f683-4469-a525-2cb455754d31" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IArrayStockTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="addTokenTest" />
+    </UnitTest>
+    <UnitTest name="resetColorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="be88146e-38a9-e8a4-e0e4-1170eec3c178">
+      <Execution id="2bc0a646-dd0c-4784-aeb5-ffb7e639082f" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="resetColorTest" />
+    </UnitTest>
+    <UnitTest name="colorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="be6209bb-1b2a-14ba-c5f1-6b231c64f17b">
+      <Execution id="cac97378-7934-48dd-8fd5-2b5b7a2b256b" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ITokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="colorTest" />
+    </UnitTest>
+    <UnitTest name="colorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="5782d1c9-f3df-a3fa-f8fd-25c44974b1b5">
+      <Execution id="fd1d257e-a067-484f-82ff-9a107b47f10d" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.TokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="colorTest" />
+    </UnitTest>
+    <UnitTest name="xTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="777989f3-1d36-aeb3-ec52-478c416051f1">
+      <Execution id="9d09b0f9-4719-4320-be3e-5606d27e5eb3" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IIteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="xTest" />
+    </UnitTest>
+    <UnitTest name="writeLineTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="0f7e872b-163f-c8a0-b10b-3f6c08e11893">
+      <Execution id="d2b51d99-9126-4bf3-a65e-2afd835c1cca" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeLineTest" />
+    </UnitTest>
+    <UnitTest name="TokenConstructorTest1" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="e194b682-fa12-eda1-6dc6-9b5cf78f0a85">
+      <Execution id="3d0c1791-3a7b-4ea7-ac98-394e8d977810" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.TokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TokenConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="nbcolsTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="3023cdef-91a0-6c8c-af96-9f1339923351">
+      <Execution id="3252e2f8-6503-4691-b20d-c73924bd3f36" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IArrayStockTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nbcolsTest" />
+    </UnitTest>
+    <UnitTest name="setForegroundColorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="1ef4baa0-41a7-2c35-0483-1bae9032c6fc">
+      <Execution id="0f97e755-2bb7-4c8e-966e-fd2d3853a3b5" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setForegroundColorTest" />
+    </UnitTest>
+    <UnitTest name="KeyboardInputConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="96367228-da7a-a979-126e-cebd10a05a5e">
+      <Execution id="7960a2fa-a045-4707-8845-c46ed6012dd7" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.KeyboardInputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeyboardInputConstructorTest" />
+    </UnitTest>
+    <UnitTest name="formatAsAGridTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="de0ed6d7-3437-a8ab-3768-52ed863b4ac4">
+      <Execution id="a71a03f5-10d7-43e3-ae31-4a4aab41f707" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ArrayFormatTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="formatAsAGridTest" />
+    </UnitTest>
+    <UnitTest name="previousTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="6c57f684-705b-92b6-4cb6-4a7c50899bdc">
+      <Execution id="4e2b052b-3fc6-47f5-857c-cbed472e26cb" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IIteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="previousTest" />
+    </UnitTest>
+    <UnitTest name="nbTokenTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="deaa4bb8-5656-44a7-71da-8d503046fc2d">
+      <Execution id="967a4dd1-4fb1-4695-9e54-7079e97b94f2" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IPlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nbTokenTest" />
+    </UnitTest>
+    <UnitTest name="tokenStyleTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="4fa3b436-9037-eabb-fa89-3be512228c5e">
+      <Execution id="1e7bdce4-d320-418f-9fcb-5a0aa4696b3e" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IPlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="tokenStyleTest" />
+    </UnitTest>
+    <UnitTest name="writeGridTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="91348b6a-b0d8-ce3e-d900-5f741a00d20f">
+      <Execution id="37914682-fedb-4ea8-b95a-24b85a11b9e1" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeGridTest" />
+    </UnitTest>
+    <UnitTest name="getValueTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="48b37157-5ae5-0bb9-414d-aeff285ba0be">
+      <Execution id="595dc0f6-ab85-47ff-af79-7cc597188f73" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IArrayStockTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getValueTest" />
+    </UnitTest>
+    <UnitTest name="writeTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="1eea696a-e698-00f8-eb51-48f87621175b">
+      <Execution id="9d3ee263-21c7-4909-b2f6-6cbe82f5d428" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeTest" />
+    </UnitTest>
+    <UnitTest name="checkNumberColonneValideTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="fd5086a7-6803-b36f-ae0d-8b1ad6e8f082">
+      <Execution id="fee3d8ce-dd0f-40cf-a90b-8f4b121acd13" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.CheckTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="checkNumberColonneValideTest" />
+    </UnitTest>
+    <UnitTest name="nextTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="29529831-1e1f-53f8-c49a-7684e5b50e87">
+      <Execution id="ae0b378f-927c-415d-9b68-a882acaa3980" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nextTest" />
+    </UnitTest>
+    <UnitTest name="writeTest1" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="76966b0b-5ab1-435b-6806-cb1a09b61db6">
+      <Execution id="d8b4ff47-2b26-437c-9f91-e16e94dfb796" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeTest1" />
+    </UnitTest>
+    <UnitTest name="nameTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="0071e819-1a49-7789-738d-4b79f6fcadfd">
+      <Execution id="a58efe4b-5b69-4201-89a1-45c349ac79bf" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IPlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nameTest" />
+    </UnitTest>
+    <UnitTest name="yTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="a87b46b9-ed52-392e-c91c-44fc365e1d5f">
+      <Execution id="607bd82b-02dc-4e57-8422-8601f9a11578" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="yTest" />
+    </UnitTest>
+    <UnitTest name="xTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="c4db383d-4613-f674-ecb0-13d294c6f80e">
+      <Execution id="77732e5a-916d-42b2-bb7c-3ef7eb12689f" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="xTest" />
+    </UnitTest>
+    <UnitTest name="setForegroundColorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="e1002dc5-8215-48e1-8d19-c469da545afa">
+      <Execution id="e07258e6-13e3-4488-bc54-25abea48acf7" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="setForegroundColorTest" />
+    </UnitTest>
+    <UnitTest name="iconTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="b148082a-5d85-479b-4e84-dbad23d551fe">
+      <Execution id="3504249e-5524-49d9-ba9c-2fbf83a3db5b" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ITokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="iconTest" />
+    </UnitTest>
+    <UnitTest name="IteratorConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="0040f6d0-31fb-2259-8250-d2ea5f9fbcc1">
+      <Execution id="df85dcea-34a6-493f-87e3-c1e059e845b2" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IteratorConstructorTest" />
+    </UnitTest>
+    <UnitTest name="iconTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="f96e9e01-108e-be13-9f43-d4ad5858a56c">
+      <Execution id="6d0770cc-b9b3-4d39-8c45-9c9b6bdb3c2e" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.TokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="iconTest" />
+    </UnitTest>
+    <UnitTest name="CleanTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="11a6bead-1627-3cdc-f14e-fb7abd12b06f">
+      <Execution id="a10bf06f-a48d-4014-b510-2e2d941958a7" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CleanTest" />
+    </UnitTest>
+    <UnitTest name="previousTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="a9c43c09-eae7-5b4a-4401-c4c1d1913f4c">
+      <Execution id="bde7e7c2-66c0-441a-bd42-73ef4a09fe95" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="previousTest" />
+    </UnitTest>
+    <UnitTest name="formatAsAGridTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="26793c05-7afe-82a1-bdaf-a718078f557e">
+      <Execution id="b92ec15f-559e-4965-a941-ed61e63efb9d" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IArrayFormatterTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="formatAsAGridTest" />
+    </UnitTest>
+    <UnitTest name="writeLineTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="c171327c-f89e-a5eb-1220-c75cdfccad50">
+      <Execution id="8cad02a8-2dad-44c9-9e0e-6105364b7d7f" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="writeLineTest" />
+    </UnitTest>
+    <UnitTest name="PlayerConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="57bb448c-e68c-dfba-b66d-8287aa9613fe">
+      <Execution id="9dfd02b6-7287-4032-811f-06d745e6cb0e" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.PlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PlayerConstructorTest" />
+    </UnitTest>
+    <UnitTest name="valueTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="1b1ac829-54fc-e6c2-f198-f69556635860">
+      <Execution id="4c944853-89e7-44f4-98f7-d54cee49a103" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.TokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="valueTest" />
+    </UnitTest>
+    <UnitTest name="valueTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="cfdf9f5e-7411-08bb-129a-8c80abb72f80">
+      <Execution id="f9c78719-8e6b-4afd-82fd-04441a18f3eb" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ITokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="valueTest" />
+    </UnitTest>
+    <UnitTest name="nameTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="8c0e97b5-cac2-0de3-c7e2-60d83bfd535e">
+      <Execution id="035afb58-acc2-436c-b9da-0bbfeb7a51e3" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.PlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nameTest" />
+    </UnitTest>
+    <UnitTest name="checkEndTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="bd4ca677-5630-7772-6858-426f0481a282">
+      <Execution id="90116caa-0a40-4b62-9d79-dd76d93cc65e" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.CheckTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="checkEndTest" />
+    </UnitTest>
+    <UnitTest name="MainTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="ce52540e-344a-0b28-4321-41d913122b8c">
+      <DeploymentItems>
+        <DeploymentItem filename="ConsoleApplication1.exe" />
+      </DeploymentItems>
+      <Execution id="41bc240d-5ccf-4a7a-a881-2afe6722403c" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ProgramTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MainTest" />
+    </UnitTest>
+    <UnitTest name="EqualsTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="d9fdbf30-72b1-0b65-eaf8-afebca931ef7">
+      <Execution id="cd2d9000-43c7-45b3-accf-ea32a74029ef" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.TokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EqualsTest" />
+    </UnitTest>
+    <UnitTest name="ProgramConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="ead6fec6-d9a5-79c7-1ec9-8767d1fc82fc">
+      <Execution id="1174321b-c619-45bc-8146-09532a852283" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ProgramTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProgramConstructorTest" />
+    </UnitTest>
+    <UnitTest name="readTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="27f0e1c0-361e-1f5b-ed6e-9427122793a3">
+      <Execution id="d588ad77-d06c-4c4e-9955-11c0b0d70dee" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IInputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="readTest" />
+    </UnitTest>
+    <UnitTest name="CleanTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="2cb3487f-7e4f-04c8-efbc-c23aba41c2be">
+      <Execution id="cb96cd7a-0253-4381-b264-51a1095034f8" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ColorOutputTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CleanTest" />
+    </UnitTest>
+    <UnitTest name="nbTokenTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="74ff4927-a651-d986-b8e8-1352fa3760c0">
+      <Execution id="24d6bc6a-7a29-4526-969e-763f7ae70d5b" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.PlayerTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="nbTokenTest" />
+    </UnitTest>
+    <UnitTest name="TokenConstructorTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="1aa9f3cb-4d34-695f-7b1a-8ccda584cf01">
+      <Execution id="2fe2bc6e-4a67-4969-8b88-2a4efb56fff6" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.TokenTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TokenConstructorTest" />
+    </UnitTest>
+    <UnitTest name="yTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="50bb076e-079c-d4f2-dd63-e8f606d83cf1">
+      <Execution id="fe12f77a-bceb-4f86-abd8-3882fadf3359" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.IIteratorTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="yTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0040f6d0-31fb-2259-8250-d2ea5f9fbcc1" executionId="df85dcea-34a6-493f-87e3-c1e059e845b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="005e610b-b44c-b091-5f74-8ef9a3592aad" executionId="29de42ce-1eb1-49e2-bb83-05ff8221fca7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0071e819-1a49-7789-738d-4b79f6fcadfd" executionId="a58efe4b-5b69-4201-89a1-45c349ac79bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06b3d48c-7219-2943-fac1-ec484245d136" executionId="9adea15b-6305-41f0-b837-f164c5b99e4c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="088902a6-cbab-c572-008e-2fb27496e40c" executionId="a5798d71-2d80-4267-b827-8996aa6b56f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a38bf22-73bf-b1ed-f889-97a10c50e097" executionId="f4c86569-010d-4953-9833-9b5be0b7310e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f7e872b-163f-c8a0-b10b-3f6c08e11893" executionId="d2b51d99-9126-4bf3-a65e-2afd835c1cca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11a6bead-1627-3cdc-f14e-fb7abd12b06f" executionId="a10bf06f-a48d-4014-b510-2e2d941958a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1aa9f3cb-4d34-695f-7b1a-8ccda584cf01" executionId="2fe2bc6e-4a67-4969-8b88-2a4efb56fff6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b1ac829-54fc-e6c2-f198-f69556635860" executionId="4c944853-89e7-44f4-98f7-d54cee49a103" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1eea696a-e698-00f8-eb51-48f87621175b" executionId="9d3ee263-21c7-4909-b2f6-6cbe82f5d428" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ef4baa0-41a7-2c35-0483-1bae9032c6fc" executionId="0f97e755-2bb7-4c8e-966e-fd2d3853a3b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26793c05-7afe-82a1-bdaf-a718078f557e" executionId="b92ec15f-559e-4965-a941-ed61e63efb9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27f0e1c0-361e-1f5b-ed6e-9427122793a3" executionId="d588ad77-d06c-4c4e-9955-11c0b0d70dee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29529831-1e1f-53f8-c49a-7684e5b50e87" executionId="ae0b378f-927c-415d-9b68-a882acaa3980" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2cb3487f-7e4f-04c8-efbc-c23aba41c2be" executionId="cb96cd7a-0253-4381-b264-51a1095034f8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2d115d87-eada-fd38-c0ac-4ace49c290e9" executionId="2afc2cbd-6768-479b-a6c3-04e83ed647fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2f2f41b3-79f0-16ca-468e-2d57f846fdd4" executionId="d345a479-c925-4ce5-baf6-9a3e030f7f95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3023cdef-91a0-6c8c-af96-9f1339923351" executionId="3252e2f8-6503-4691-b20d-c73924bd3f36" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4430f9f4-44b5-fe1f-6ce0-f3e182d76dd3" executionId="997475f0-1fe3-4f51-b680-71d832c96bb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48b37157-5ae5-0bb9-414d-aeff285ba0be" executionId="595dc0f6-ab85-47ff-af79-7cc597188f73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4fa3b436-9037-eabb-fa89-3be512228c5e" executionId="1e7bdce4-d320-418f-9fcb-5a0aa4696b3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ff155cf-6cd8-6bf7-9f61-48e140fd6269" executionId="3c908515-206a-4f60-b837-9cf1cb5a091e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50bb076e-079c-d4f2-dd63-e8f606d83cf1" executionId="fe12f77a-bceb-4f86-abd8-3882fadf3359" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5782d1c9-f3df-a3fa-f8fd-25c44974b1b5" executionId="fd1d257e-a067-484f-82ff-9a107b47f10d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57bb448c-e68c-dfba-b66d-8287aa9613fe" executionId="9dfd02b6-7287-4032-811f-06d745e6cb0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="613ca9fe-c298-4d9e-85ec-1ba5cd4b955f" executionId="47b565f9-f9f8-4d74-8775-bc1dd8fbac9a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="66ab54a3-219d-dd31-4e14-e009f6917a4e" executionId="db374099-f683-4469-a525-2cb455754d31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="690ae81b-824b-0eb8-fe9e-62e111ffaa9b" executionId="f7d52bc6-751f-4845-9831-e6eb7a2121c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6c57f684-705b-92b6-4cb6-4a7c50899bdc" executionId="4e2b052b-3fc6-47f5-857c-cbed472e26cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74ff4927-a651-d986-b8e8-1352fa3760c0" executionId="24d6bc6a-7a29-4526-969e-763f7ae70d5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76966b0b-5ab1-435b-6806-cb1a09b61db6" executionId="d8b4ff47-2b26-437c-9f91-e16e94dfb796" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="777989f3-1d36-aeb3-ec52-478c416051f1" executionId="9d09b0f9-4719-4320-be3e-5606d27e5eb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c0e97b5-cac2-0de3-c7e2-60d83bfd535e" executionId="035afb58-acc2-436c-b9da-0bbfeb7a51e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8dfb3681-81bc-9348-0305-bc161acc365d" executionId="7e0ae4f4-7ded-4c50-a97b-912f664bb9fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91348b6a-b0d8-ce3e-d900-5f741a00d20f" executionId="37914682-fedb-4ea8-b95a-24b85a11b9e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96367228-da7a-a979-126e-cebd10a05a5e" executionId="7960a2fa-a045-4707-8845-c46ed6012dd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a87b46b9-ed52-392e-c91c-44fc365e1d5f" executionId="607bd82b-02dc-4e57-8422-8601f9a11578" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9c43c09-eae7-5b4a-4401-c4c1d1913f4c" executionId="bde7e7c2-66c0-441a-bd42-73ef4a09fe95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b148082a-5d85-479b-4e84-dbad23d551fe" executionId="3504249e-5524-49d9-ba9c-2fbf83a3db5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd4ca677-5630-7772-6858-426f0481a282" executionId="90116caa-0a40-4b62-9d79-dd76d93cc65e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be6209bb-1b2a-14ba-c5f1-6b231c64f17b" executionId="cac97378-7934-48dd-8fd5-2b5b7a2b256b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be88146e-38a9-e8a4-e0e4-1170eec3c178" executionId="2bc0a646-dd0c-4784-aeb5-ffb7e639082f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c171327c-f89e-a5eb-1220-c75cdfccad50" executionId="8cad02a8-2dad-44c9-9e0e-6105364b7d7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4db383d-4613-f674-ecb0-13d294c6f80e" executionId="77732e5a-916d-42b2-bb7c-3ef7eb12689f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c708a67b-4d0c-be36-5cdc-4bcd26026497" executionId="eaf9f584-19d2-4800-b08f-4aa5477e7c6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce52540e-344a-0b28-4321-41d913122b8c" executionId="41bc240d-5ccf-4a7a-a881-2afe6722403c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfdf9f5e-7411-08bb-129a-8c80abb72f80" executionId="f9c78719-8e6b-4afd-82fd-04441a18f3eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d564b3fc-4c4b-4fc5-9799-cf283ee5d0f3" executionId="da4f2d89-710f-4de8-877f-d9ff695422f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d9fdbf30-72b1-0b65-eaf8-afebca931ef7" executionId="cd2d9000-43c7-45b3-accf-ea32a74029ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de0ed6d7-3437-a8ab-3768-52ed863b4ac4" executionId="a71a03f5-10d7-43e3-ae31-4a4aab41f707" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="deaa4bb8-5656-44a7-71da-8d503046fc2d" executionId="967a4dd1-4fb1-4695-9e54-7079e97b94f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1002dc5-8215-48e1-8d19-c469da545afa" executionId="e07258e6-13e3-4488-bc54-25abea48acf7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e194b682-fa12-eda1-6dc6-9b5cf78f0a85" executionId="3d0c1791-3a7b-4ea7-ac98-394e8d977810" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ead6fec6-d9a5-79c7-1ec9-8767d1fc82fc" executionId="1174321b-c619-45bc-8146-09532a852283" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eed219ad-c1dd-0377-e46e-9330a95a5d3c" executionId="34f4879d-e6f1-4ec9-abda-3db1efc3467b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f96e9e01-108e-be13-9f43-d4ad5858a56c" executionId="6d0770cc-b9b3-4d39-8c45-9c9b6bdb3c2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd5086a7-6803-b36f-ae0d-8b1ad6e8f082" executionId="fee3d8ce-dd0f-40cf-a90b-8f4b121acd13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="df85dcea-34a6-493f-87e3-c1e059e845b2" testId="0040f6d0-31fb-2259-8250-d2ea5f9fbcc1" testName="IteratorConstructorTest" computerName="B-0-12-21" duration="00:00:00.0843558" startTime="2015-05-04T17:01:00.5076603+02:00" endTime="2015-05-04T17:01:01.0906603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df85dcea-34a6-493f-87e3-c1e059e845b2">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.IteratorTest.IteratorConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IteratorTest.cs:ligne 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="29de42ce-1eb1-49e2-bb83-05ff8221fca7" testId="005e610b-b44c-b091-5f74-8ef9a3592aad" testName="readLineTest" computerName="B-0-12-21" duration="00:00:00.0171944" startTime="2015-05-04T17:01:01.1446603+02:00" endTime="2015-05-04T17:01:01.1646603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29de42ce-1eb1-49e2-bb83-05ff8221fca7">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IInputTest.readLineTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IInputTest.readLineTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IInputTest.cs:ligne 97
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a58efe4b-5b69-4201-89a1-45c349ac79bf" testId="0071e819-1a49-7789-738d-4b79f6fcadfd" testName="nameTest" computerName="B-0-12-21" duration="00:00:00.0067063" startTime="2015-05-04T17:01:01.2296603+02:00" endTime="2015-05-04T17:01:01.2496603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a58efe4b-5b69-4201-89a1-45c349ac79bf">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IPlayerTest.nameTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IPlayerTest.nameTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IPlayerTest.cs:ligne 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9adea15b-6305-41f0-b837-f164c5b99e4c" testId="06b3d48c-7219-2943-fac1-ec484245d136" testName="nextTest" computerName="B-0-12-21" duration="00:00:00.0053618" startTime="2015-05-04T17:01:01.2846603+02:00" endTime="2015-05-04T17:01:01.2936603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9adea15b-6305-41f0-b837-f164c5b99e4c">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IIteratorTest.nextTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IIteratorTest.nextTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IIteratorTest.cs:ligne 85
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a5798d71-2d80-4267-b827-8996aa6b56f7" testId="088902a6-cbab-c572-008e-2fb27496e40c" testName="EqualsTest" computerName="B-0-12-21" duration="00:00:00.0063445" startTime="2015-05-04T17:01:01.3166603+02:00" endTime="2015-05-04T17:01:01.3266603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5798d71-2d80-4267-b827-8996aa6b56f7">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.ITokenTest.EqualsTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.ITokenTest.EqualsTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ITokenTest.cs:ligne 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4c86569-010d-4953-9833-9b5be0b7310e" testId="0a38bf22-73bf-b1ed-f889-97a10c50e097" testName="addTokenTest" computerName="B-0-12-21" duration="00:00:00.0015321" startTime="2015-05-04T17:01:01.3656603+02:00" endTime="2015-05-04T17:01:01.3696603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4c86569-010d-4953-9833-9b5be0b7310e">
+    </UnitTestResult>
+    <UnitTestResult executionId="d2b51d99-9126-4bf3-a65e-2afd835c1cca" testId="0f7e872b-163f-c8a0-b10b-3f6c08e11893" testName="writeLineTest" computerName="B-0-12-21" duration="00:00:00.0152098" startTime="2015-05-04T17:01:01.4246603+02:00" endTime="2015-05-04T17:01:01.4456603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2b51d99-9126-4bf3-a65e-2afd835c1cca">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IOutputTest.writeLineTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IOutputTest.writeLineTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IOutputTest.cs:ligne 140
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a10bf06f-a48d-4014-b510-2e2d941958a7" testId="11a6bead-1627-3cdc-f14e-fb7abd12b06f" testName="CleanTest" computerName="B-0-12-21" duration="00:00:00.0031850" startTime="2015-05-04T17:01:01.4776603+02:00" endTime="2015-05-04T17:01:01.4976603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a10bf06f-a48d-4014-b510-2e2d941958a7">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IOutputTest.CleanTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IOutputTest.CleanTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IOutputTest.cs:ligne 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2fe2bc6e-4a67-4969-8b88-2a4efb56fff6" testId="1aa9f3cb-4d34-695f-7b1a-8ccda584cf01" testName="TokenConstructorTest" computerName="B-0-12-21" duration="00:00:00.0040392" startTime="2015-05-04T17:01:01.5106603+02:00" endTime="2015-05-04T17:01:01.5196603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fe2bc6e-4a67-4969-8b88-2a4efb56fff6">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.TokenTest.TokenConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\TokenTest.cs:ligne 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c944853-89e7-44f4-98f7-d54cee49a103" testId="1b1ac829-54fc-e6c2-f198-f69556635860" testName="valueTest" computerName="B-0-12-21" duration="00:00:00.0008357" startTime="2015-05-04T17:01:01.5386603+02:00" endTime="2015-05-04T17:01:01.5426603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c944853-89e7-44f4-98f7-d54cee49a103">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.TokenTest.valueTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\TokenTest.cs:ligne 147
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9d3ee263-21c7-4909-b2f6-6cbe82f5d428" testId="1eea696a-e698-00f8-eb51-48f87621175b" testName="writeTest" computerName="B-0-12-21" duration="00:00:00.0056029" startTime="2015-05-04T17:01:01.6126603+02:00" endTime="2015-05-04T17:01:01.6316603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d3ee263-21c7-4909-b2f6-6cbe82f5d428">
+      <Output>
+        <StdOut>\0</StdOut>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.writeTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 126
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0f97e755-2bb7-4c8e-966e-fd2d3853a3b5" testId="1ef4baa0-41a7-2c35-0483-1bae9032c6fc" testName="setForegroundColorTest" computerName="B-0-12-21" duration="00:00:00.0218234" startTime="2015-05-04T17:01:01.6626603+02:00" endTime="2015-05-04T17:01:01.6976603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f97e755-2bb7-4c8e-966e-fd2d3853a3b5">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.setForegroundColorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b92ec15f-559e-4965-a941-ed61e63efb9d" testId="26793c05-7afe-82a1-bdaf-a718078f557e" testName="formatAsAGridTest" computerName="B-0-12-21" duration="00:00:00.0050391" startTime="2015-05-04T17:01:01.7206603+02:00" endTime="2015-05-04T17:01:01.7356603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b92ec15f-559e-4965-a941-ed61e63efb9d">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IArrayFormatterTest.formatAsAGridTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IArrayFormatterTest.formatAsAGridTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IArrayFormatterTest.cs:ligne 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d588ad77-d06c-4c4e-9955-11c0b0d70dee" testId="27f0e1c0-361e-1f5b-ed6e-9427122793a3" testName="readTest" computerName="B-0-12-21" duration="00:00:00.0034531" startTime="2015-05-04T17:01:01.7476603+02:00" endTime="2015-05-04T17:01:01.7546603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d588ad77-d06c-4c4e-9955-11c0b0d70dee">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IInputTest.readTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IInputTest.readTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IInputTest.cs:ligne 83
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae0b378f-927c-415d-9b68-a882acaa3980" testId="29529831-1e1f-53f8-c49a-7684e5b50e87" testName="nextTest" computerName="B-0-12-21" duration="00:00:00.0125399" startTime="2015-05-04T17:01:01.7676603+02:00" endTime="2015-05-04T17:01:01.7846603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae0b378f-927c-415d-9b68-a882acaa3980">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IteratorTest.nextTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4.Iterator.next(Int32 col, Int32 row) dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\Iterator.cs:ligne 23
+   à Power4Test.IteratorTest.nextTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IteratorTest.cs:ligne 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cb96cd7a-0253-4381-b264-51a1095034f8" testId="2cb3487f-7e4f-04c8-efbc-c23aba41c2be" testName="CleanTest" computerName="B-0-12-21" duration="00:00:00.0068278" startTime="2015-05-04T17:01:01.8076603+02:00" endTime="2015-05-04T17:01:01.8206603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb96cd7a-0253-4381-b264-51a1095034f8">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.ColorOutputTest.CleanTest a levé une exception : 
+System.IO.IOException: Descripteur non valide
+</Message>
+          <StackTrace>    à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.Console.GetBufferInfo(Boolean throwOnNoConsole, Boolean&amp; succeeded)
+   à System.Console.Clear()
+   à Power4.ColorOutput.Clean() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\ColorOutput.cs:ligne 64
+   à Power4Test.ColorOutputTest.CleanTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 87
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2afc2cbd-6768-479b-a6c3-04e83ed647fb" testId="2d115d87-eada-fd38-c0ac-4ace49c290e9" testName="writeTest" computerName="B-0-12-21" duration="00:00:00.0087659" startTime="2015-05-04T17:01:01.8846603+02:00" endTime="2015-05-04T17:01:01.9356603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2afc2cbd-6768-479b-a6c3-04e83ed647fb">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IOutputTest.writeTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IOutputTest.writeTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IOutputTest.cs:ligne 116
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d345a479-c925-4ce5-baf6-9a3e030f7f95" testId="2f2f41b3-79f0-16ca-468e-2d57f846fdd4" testName="sTest" computerName="B-0-12-21" duration="00:00:00.0009302" startTime="2015-05-04T17:01:01.9536603+02:00" endTime="2015-05-04T17:01:01.9596603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d345a479-c925-4ce5-baf6-9a3e030f7f95">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.IteratorTest.sTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IteratorTest.cs:ligne 133
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3252e2f8-6503-4691-b20d-c73924bd3f36" testId="3023cdef-91a0-6c8c-af96-9f1339923351" testName="nbcolsTest" computerName="B-0-12-21" duration="00:00:00.0048351" startTime="2015-05-04T17:01:01.9716603+02:00" endTime="2015-05-04T17:01:01.9796603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3252e2f8-6503-4691-b20d-c73924bd3f36">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IArrayStockTest.nbcolsTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IArrayStockTest.nbcolsTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IArrayStockTest.cs:ligne 115
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="997475f0-1fe3-4f51-b680-71d832c96bb1" testId="4430f9f4-44b5-fe1f-6ce0-f3e182d76dd3" testName="resetColorTest" computerName="B-0-12-21" duration="00:00:00.0055042" startTime="2015-05-04T17:01:01.9906603+02:00" endTime="2015-05-04T17:01:02.0096603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="997475f0-1fe3-4f51-b680-71d832c96bb1">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.resetColorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 100
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="595dc0f6-ab85-47ff-af79-7cc597188f73" testId="48b37157-5ae5-0bb9-414d-aeff285ba0be" testName="getValueTest" computerName="B-0-12-21" duration="00:00:00.0064439" startTime="2015-05-04T17:01:02.0296603+02:00" endTime="2015-05-04T17:01:02.0396603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="595dc0f6-ab85-47ff-af79-7cc597188f73">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IArrayStockTest.getValueTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IArrayStockTest.getValueTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IArrayStockTest.cs:ligne 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1e7bdce4-d320-418f-9fcb-5a0aa4696b3e" testId="4fa3b436-9037-eabb-fa89-3be512228c5e" testName="tokenStyleTest" computerName="B-0-12-21" duration="00:00:00.0067263" startTime="2015-05-04T17:01:02.0646603+02:00" endTime="2015-05-04T17:01:02.0846603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e7bdce4-d320-418f-9fcb-5a0aa4696b3e">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IPlayerTest.tokenStyleTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IPlayerTest.tokenStyleTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IPlayerTest.cs:ligne 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3c908515-206a-4f60-b837-9cf1cb5a091e" testId="4ff155cf-6cd8-6bf7-9f61-48e140fd6269" testName="CheckConstructorTest" computerName="B-0-12-21" duration="00:00:00.0033824" startTime="2015-05-04T17:01:02.1176603+02:00" endTime="2015-05-04T17:01:02.1346603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c908515-206a-4f60-b837-9cf1cb5a091e">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.CheckTest.CheckConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\CheckTest.cs:ligne 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fe12f77a-bceb-4f86-abd8-3882fadf3359" testId="50bb076e-079c-d4f2-dd63-e8f606d83cf1" testName="yTest" computerName="B-0-12-21" duration="00:00:00.0037075" startTime="2015-05-04T17:01:02.1526603+02:00" endTime="2015-05-04T17:01:02.1606603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe12f77a-bceb-4f86-abd8-3882fadf3359">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IIteratorTest.yTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IIteratorTest.yTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IIteratorTest.cs:ligne 130
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd1d257e-a067-484f-82ff-9a107b47f10d" testId="5782d1c9-f3df-a3fa-f8fd-25c44974b1b5" testName="colorTest" computerName="B-0-12-21" duration="00:00:00.0028928" startTime="2015-05-04T17:01:02.1816603+02:00" endTime="2015-05-04T17:01:02.1896603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd1d257e-a067-484f-82ff-9a107b47f10d">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;Black&gt;, Réel : &lt;White&gt;. </Message>
+          <StackTrace>   à Power4Test.TokenTest.colorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\TokenTest.cs:ligne 116
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9dfd02b6-7287-4032-811f-06d745e6cb0e" testId="57bb448c-e68c-dfba-b66d-8287aa9613fe" testName="PlayerConstructorTest" computerName="B-0-12-21" duration="00:00:00.0033026" startTime="2015-05-04T17:01:02.2106603+02:00" endTime="2015-05-04T17:01:02.2206603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9dfd02b6-7287-4032-811f-06d745e6cb0e">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.PlayerTest.PlayerConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\PlayerTest.cs:ligne 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="47b565f9-f9f8-4d74-8775-bc1dd8fbac9a" testId="613ca9fe-c298-4d9e-85ec-1ba5cd4b955f" testName="ColorOutputConstructorTest" computerName="B-0-12-21" duration="00:00:00.0007674" startTime="2015-05-04T17:01:02.2416603+02:00" endTime="2015-05-04T17:01:02.2526603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47b565f9-f9f8-4d74-8775-bc1dd8fbac9a">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.ColorOutputConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="db374099-f683-4469-a525-2cb455754d31" testId="66ab54a3-219d-dd31-4e14-e009f6917a4e" testName="addTokenTest" computerName="B-0-12-21" duration="00:00:00.0073132" startTime="2015-05-04T17:01:02.3016603+02:00" endTime="2015-05-04T17:01:02.3266603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db374099-f683-4469-a525-2cb455754d31">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IArrayStockTest.addTokenTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IArrayStockTest.addTokenTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IArrayStockTest.cs:ligne 85
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f7d52bc6-751f-4845-9831-e6eb7a2121c6" testId="690ae81b-824b-0eb8-fe9e-62e111ffaa9b" testName="nbrowsTest" computerName="B-0-12-21" duration="00:00:00.0055598" startTime="2015-05-04T17:01:02.3696603+02:00" endTime="2015-05-04T17:01:02.3796603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7d52bc6-751f-4845-9831-e6eb7a2121c6">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IArrayStockTest.nbrowsTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IArrayStockTest.nbrowsTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IArrayStockTest.cs:ligne 130
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4e2b052b-3fc6-47f5-857c-cbed472e26cb" testId="6c57f684-705b-92b6-4cb6-4a7c50899bdc" testName="previousTest" computerName="B-0-12-21" duration="00:00:00.0044561" startTime="2015-05-04T17:01:02.4016603+02:00" endTime="2015-05-04T17:01:02.4116603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e2b052b-3fc6-47f5-857c-cbed472e26cb">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IIteratorTest.previousTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IIteratorTest.previousTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IIteratorTest.cs:ligne 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="24d6bc6a-7a29-4526-969e-763f7ae70d5b" testId="74ff4927-a651-d986-b8e8-1352fa3760c0" testName="nbTokenTest" computerName="B-0-12-21" duration="00:00:00.0010474" startTime="2015-05-04T17:01:02.4406603+02:00" endTime="2015-05-04T17:01:02.4516603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24d6bc6a-7a29-4526-969e-763f7ae70d5b">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.PlayerTest.nbTokenTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\PlayerTest.cs:ligne 110
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d8b4ff47-2b26-437c-9f91-e16e94dfb796" testId="76966b0b-5ab1-435b-6806-cb1a09b61db6" testName="writeTest1" computerName="B-0-12-21" duration="00:00:00.0075277" startTime="2015-05-04T17:01:02.4866603+02:00" endTime="2015-05-04T17:01:02.5286603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d8b4ff47-2b26-437c-9f91-e16e94dfb796">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.writeTest1() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 139
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9d09b0f9-4719-4320-be3e-5606d27e5eb3" testId="777989f3-1d36-aeb3-ec52-478c416051f1" testName="xTest" computerName="B-0-12-21" duration="00:00:00.0126813" startTime="2015-05-04T17:01:02.5616603+02:00" endTime="2015-05-04T17:01:02.5896603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d09b0f9-4719-4320-be3e-5606d27e5eb3">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IIteratorTest.xTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IIteratorTest.xTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IIteratorTest.cs:ligne 115
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="035afb58-acc2-436c-b9da-0bbfeb7a51e3" testId="8c0e97b5-cac2-0de3-c7e2-60d83bfd535e" testName="nameTest" computerName="B-0-12-21" duration="00:00:00.0019968" startTime="2015-05-04T17:01:02.6166603+02:00" endTime="2015-05-04T17:01:02.6276603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="035afb58-acc2-436c-b9da-0bbfeb7a51e3">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.PlayerTest.nameTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\PlayerTest.cs:ligne 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7e0ae4f4-7ded-4c50-a97b-912f664bb9fc" testId="8dfb3681-81bc-9348-0305-bc161acc365d" testName="readLineTest" computerName="B-0-12-21" duration="00:00:00.0070066" startTime="2015-05-04T17:01:02.6466603+02:00" endTime="2015-05-04T17:01:02.6616603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e0ae4f4-7ded-4c50-a97b-912f664bb9fc">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;&gt;, Réel : &lt;(null)&gt;. </Message>
+          <StackTrace>   à Power4Test.KeyboardInputTest.readLineTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\KeyboardInputTest.cs:ligne 101
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="37914682-fedb-4ea8-b95a-24b85a11b9e1" testId="91348b6a-b0d8-ce3e-d900-5f741a00d20f" testName="writeGridTest" computerName="B-0-12-21" duration="00:00:00.0027808" startTime="2015-05-04T17:01:02.6826603+02:00" endTime="2015-05-04T17:01:02.7056603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37914682-fedb-4ea8-b95a-24b85a11b9e1">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IOutputTest.writeGridTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IOutputTest.writeGridTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IOutputTest.cs:ligne 128
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7960a2fa-a045-4707-8845-c46ed6012dd7" testId="96367228-da7a-a979-126e-cebd10a05a5e" testName="KeyboardInputConstructorTest" computerName="B-0-12-21" duration="00:00:00.0134246" startTime="2015-05-04T17:01:02.7806603+02:00" endTime="2015-05-04T17:01:02.8166603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7960a2fa-a045-4707-8845-c46ed6012dd7">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.KeyboardInputTest.KeyboardInputConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\KeyboardInputTest.cs:ligne 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="607bd82b-02dc-4e57-8422-8601f9a11578" testId="a87b46b9-ed52-392e-c91c-44fc365e1d5f" testName="yTest" computerName="B-0-12-21" duration="00:00:00.0013788" startTime="2015-05-04T17:01:02.8446603+02:00" endTime="2015-05-04T17:01:02.8516603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="607bd82b-02dc-4e57-8422-8601f9a11578">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.IteratorTest.yTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IteratorTest.cs:ligne 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bde7e7c2-66c0-441a-bd42-73ef4a09fe95" testId="a9c43c09-eae7-5b4a-4401-c4c1d1913f4c" testName="previousTest" computerName="B-0-12-21" duration="00:00:00.0054279" startTime="2015-05-04T17:01:02.8706603+02:00" endTime="2015-05-04T17:01:02.8826603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bde7e7c2-66c0-441a-bd42-73ef4a09fe95">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IteratorTest.previousTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4.Iterator.previous(Int32 col, Int32 row) dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\Iterator.cs:ligne 28
+   à Power4Test.IteratorTest.previousTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IteratorTest.cs:ligne 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3504249e-5524-49d9-ba9c-2fbf83a3db5b" testId="b148082a-5d85-479b-4e84-dbad23d551fe" testName="iconTest" computerName="B-0-12-21" duration="00:00:00.0052753" startTime="2015-05-04T17:01:02.9096603+02:00" endTime="2015-05-04T17:01:02.9216603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3504249e-5524-49d9-ba9c-2fbf83a3db5b">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.ITokenTest.iconTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.ITokenTest.iconTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ITokenTest.cs:ligne 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="90116caa-0a40-4b62-9d79-dd76d93cc65e" testId="bd4ca677-5630-7772-6858-426f0481a282" testName="checkEndTest" computerName="B-0-12-21" duration="00:00:00.0107810" startTime="2015-05-04T17:01:03.0326603+02:00" endTime="2015-05-04T17:01:03.0606603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90116caa-0a40-4b62-9d79-dd76d93cc65e">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.CheckTest.checkEndTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4.Check.checkEnd(Int32 impactRow, Int32 impactCol, IArrayStock grilleJeu) dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\Check.cs:ligne 18
+   à Power4Test.CheckTest.checkEndTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\CheckTest.cs:ligne 95
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cac97378-7934-48dd-8fd5-2b5b7a2b256b" testId="be6209bb-1b2a-14ba-c5f1-6b231c64f17b" testName="colorTest" computerName="B-0-12-21" duration="00:00:00.0186909" startTime="2015-05-04T17:01:03.0836603+02:00" endTime="2015-05-04T17:01:03.1156603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cac97378-7934-48dd-8fd5-2b5b7a2b256b">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.ITokenTest.colorTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.ITokenTest.colorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ITokenTest.cs:ligne 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2bc0a646-dd0c-4784-aeb5-ffb7e639082f" testId="be88146e-38a9-e8a4-e0e4-1170eec3c178" testName="resetColorTest" computerName="B-0-12-21" duration="00:00:00.0040354" startTime="2015-05-04T17:01:03.1466603+02:00" endTime="2015-05-04T17:01:03.1696603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bc0a646-dd0c-4784-aeb5-ffb7e639082f">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IOutputTest.resetColorTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IOutputTest.resetColorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IOutputTest.cs:ligne 92
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8cad02a8-2dad-44c9-9e0e-6105364b7d7f" testId="c171327c-f89e-a5eb-1220-c75cdfccad50" testName="writeLineTest" computerName="B-0-12-21" duration="00:00:00.0020101" startTime="2015-05-04T17:01:03.1916603+02:00" endTime="2015-05-04T17:01:03.2116603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8cad02a8-2dad-44c9-9e0e-6105364b7d7f">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.writeLineTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 165
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="77732e5a-916d-42b2-bb7c-3ef7eb12689f" testId="c4db383d-4613-f674-ecb0-13d294c6f80e" testName="xTest" computerName="B-0-12-21" duration="00:00:00.0008164" startTime="2015-05-04T17:01:03.2296603+02:00" endTime="2015-05-04T17:01:03.2366603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77732e5a-916d-42b2-bb7c-3ef7eb12689f">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.IteratorTest.xTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IteratorTest.cs:ligne 151
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eaf9f584-19d2-4800-b08f-4aa5477e7c6b" testId="c708a67b-4d0c-be36-5cdc-4bcd26026497" testName="writeGridTest" computerName="B-0-12-21" duration="00:00:00.0012836" startTime="2015-05-04T17:01:03.2576603+02:00" endTime="2015-05-04T17:01:03.2626603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eaf9f584-19d2-4800-b08f-4aa5477e7c6b">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.</Message>
+          <StackTrace>   à Power4Test.ColorOutputTest.writeGridTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ColorOutputTest.cs:ligne 152
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="41bc240d-5ccf-4a7a-a881-2afe6722403c" testId="ce52540e-344a-0b28-4321-41d913122b8c" testName="MainTest" computerName="B-0-12-21" duration="00:00:00.1263477" startTime="2015-05-04T17:01:03.2766603+02:00" endTime="2015-05-04T17:01:03.4136603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41bc240d-5ccf-4a7a-a881-2afe6722403c">
+      <Output>
+        <StdOut>:::::::::   ::::::::  :::       ::: :::::::::: :::::::::      :::     
+:+:    :+: :+:    :+: :+:       :+: :+:        :+:    :+:    :+:      
++:+    +:+ +:+    +:+ +:+       +:+ +:+        +:+    +:+   +:+ +:+   
++#++:++#+  +#+    +:+ +#+  +:+  +#+ +#++:++#   +#++:++#:   +#+  +:+   
++#+        +#+    +#+ +#+ +#+#+ +#+ +#+        +#+    +#+ +#+#+#+#+#+ 
+#+#        #+#    #+#  #+#+# #+#+#  #+#        #+#    #+#       #+#   
+###         ########    ###   ###   ########## ###    ###       ###   
+
+Saisir le nom du joueur 1 :
+Saisir le nom du joueur 2 :</StdOut>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.ProgramTest.MainTest a levé une exception : 
+System.IO.IOException: Descripteur non valide
+</Message>
+          <StackTrace>   à Power4.Program_Accessor.Main(String[] args)
+   à Power4Test.ProgramTest.MainTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ProgramTest.cs:ligne 85
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f9c78719-8e6b-4afd-82fd-04441a18f3eb" testId="cfdf9f5e-7411-08bb-129a-8c80abb72f80" testName="valueTest" computerName="B-0-12-21" duration="00:00:00.0082136" startTime="2015-05-04T17:01:03.4386603+02:00" endTime="2015-05-04T17:01:03.4646603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9c78719-8e6b-4afd-82fd-04441a18f3eb">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.ITokenTest.valueTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.ITokenTest.valueTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ITokenTest.cs:ligne 128
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da4f2d89-710f-4de8-877f-d9ff695422f4" testId="d564b3fc-4c4b-4fc5-9799-cf283ee5d0f3" testName="readTest" computerName="B-0-12-21" duration="00:00:00.0025197" startTime="2015-05-04T17:01:03.4836603+02:00" endTime="2015-05-04T17:01:03.4906603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da4f2d89-710f-4de8-877f-d9ff695422f4">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.KeyboardInputTest.readTest a levé une exception : 
+System.OverflowException: La valeur était trop grande ou trop petite pour un caractère.</Message>
+          <StackTrace>    à System.Convert.ToChar(Int32 value)
+   à Power4.KeyboardInput.read() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\KeyboardInput.cs:ligne 12
+   à Power4Test.KeyboardInputTest.readTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\KeyboardInputTest.cs:ligne 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cd2d9000-43c7-45b3-accf-ea32a74029ef" testId="d9fdbf30-72b1-0b65-eaf8-afebca931ef7" testName="EqualsTest" computerName="B-0-12-21" duration="00:00:00.0036690" startTime="2015-05-04T17:01:03.5056603+02:00" endTime="2015-05-04T17:01:03.5126603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd2d9000-43c7-45b3-accf-ea32a74029ef">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.TokenTest.EqualsTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4.Token.Equals(IToken t) dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\Token.cs:ligne 66
+   à Power4Test.TokenTest.EqualsTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\TokenTest.cs:ligne 100
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a71a03f5-10d7-43e3-ae31-4a4aab41f707" testId="de0ed6d7-3437-a8ab-3768-52ed863b4ac4" testName="formatAsAGridTest" computerName="B-0-12-21" duration="00:00:00.0046349" startTime="2015-05-04T17:01:03.5296603+02:00" endTime="2015-05-04T17:01:03.5376603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a71a03f5-10d7-43e3-ae31-4a4aab41f707">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;.&gt;, Réel : &lt; . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+_____________________
+ 1 2 3 4 5 6 7 8 9 10 
+&gt;. </Message>
+          <StackTrace>   à Power4Test.ArrayFormatTest.formatAsAGridTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ArrayFormatTest.cs:ligne 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="967a4dd1-4fb1-4695-9e54-7079e97b94f2" testId="deaa4bb8-5656-44a7-71da-8d503046fc2d" testName="nbTokenTest" computerName="B-0-12-21" duration="00:00:00.0036721" startTime="2015-05-04T17:01:03.5556603+02:00" endTime="2015-05-04T17:01:03.5656603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="967a4dd1-4fb1-4695-9e54-7079e97b94f2">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IPlayerTest.nbTokenTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IPlayerTest.nbTokenTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IPlayerTest.cs:ligne 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e07258e6-13e3-4488-bc54-25abea48acf7" testId="e1002dc5-8215-48e1-8d19-c469da545afa" testName="setForegroundColorTest" computerName="B-0-12-21" duration="00:00:00.0093895" startTime="2015-05-04T17:01:03.5906603+02:00" endTime="2015-05-04T17:01:03.6066603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e07258e6-13e3-4488-bc54-25abea48acf7">
+      <Output>
+        <ErrorInfo>
+          <Message>La méthode de test Power4Test.IOutputTest.setForegroundColorTest a levé une exception : 
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.</Message>
+          <StackTrace>    à Power4Test.IOutputTest.setForegroundColorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\IOutputTest.cs:ligne 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3d0c1791-3a7b-4ea7-ac98-394e8d977810" testId="e194b682-fa12-eda1-6dc6-9b5cf78f0a85" testName="TokenConstructorTest1" computerName="B-0-12-21" duration="00:00:00.0186580" startTime="2015-05-04T17:01:03.6316603+02:00" endTime="2015-05-04T17:01:03.6636603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3d0c1791-3a7b-4ea7-ac98-394e8d977810">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.TokenTest.TokenConstructorTest1() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\TokenTest.cs:ligne 87
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1174321b-c619-45bc-8146-09532a852283" testId="ead6fec6-d9a5-79c7-1ec9-8767d1fc82fc" testName="ProgramConstructorTest" computerName="B-0-12-21" duration="00:00:00.0007909" startTime="2015-05-04T17:01:03.6846603+02:00" endTime="2015-05-04T17:01:03.6936603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1174321b-c619-45bc-8146-09532a852283">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. TODO: implémentez le code pour vérifier la cible</Message>
+          <StackTrace>   à Power4Test.ProgramTest.ProgramConstructorTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ProgramTest.cs:ligne 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="34f4879d-e6f1-4ec9-abda-3db1efc3467b" testId="eed219ad-c1dd-0377-e46e-9330a95a5d3c" testName="tokenStyleTest" computerName="B-0-12-21" duration="00:00:00.0010855" startTime="2015-05-04T17:01:03.7096603+02:00" endTime="2015-05-04T17:01:03.7166603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34f4879d-e6f1-4ec9-abda-3db1efc3467b">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.PlayerTest.tokenStyleTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\PlayerTest.cs:ligne 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d0770cc-b9b3-4d39-8c45-9c9b6bdb3c2e" testId="f96e9e01-108e-be13-9f43-d4ad5858a56c" testName="iconTest" computerName="B-0-12-21" duration="00:00:00.0025942" startTime="2015-05-04T17:01:03.7296603+02:00" endTime="2015-05-04T17:01:03.7366603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d0770cc-b9b3-4d39-8c45-9c9b6bdb3c2e">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;\0&gt;, Réel : &lt;.&gt;. </Message>
+          <StackTrace>   à Power4Test.TokenTest.iconTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\TokenTest.cs:ligne 131
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fee3d8ce-dd0f-40cf-a90b-8f4b121acd13" testId="fd5086a7-6803-b36f-ae0d-8b1ad6e8f082" testName="checkNumberColonneValideTest" computerName="B-0-12-21" duration="00:00:00.0012910" startTime="2015-05-04T17:01:03.7536603+02:00" endTime="2015-05-04T17:01:03.7586603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fee3d8ce-dd0f-40cf-a90b-8f4b121acd13">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.Inconclusive. Vérifiez l'exactitude de cette méthode de test.</Message>
+          <StackTrace>   à Power4Test.CheckTest.checkNumberColonneValideTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\CheckTest.cs:ligne 112
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

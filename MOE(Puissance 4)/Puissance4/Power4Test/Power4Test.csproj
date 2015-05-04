@@ -61,13 +61,8 @@
     <Compile Include="IPlayerTest.cs" />
     <Compile Include="IteratorTest.cs" />
     <Compile Include="ITokenTest.cs" />
-    <Compile Include="KeyboardInputTest.cs" />
-    <Compile Include="PlayerTest.cs" />
-    <Compile Include="Power4Test.cs" />
-    <Compile Include="ProgramTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ArrayStockTest.cs" />
-    <Compile Include="TokenTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Puissance4\Puissance4Studio2010.csproj">

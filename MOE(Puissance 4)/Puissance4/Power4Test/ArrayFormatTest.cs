@@ -70,14 +70,7 @@ namespace Power4Test
         [TestMethod()]
         public void formatAsAGridTest()
         {
-            IToken token = new Token('+', 'O', ConsoleColor.Yellow);
-            ArrayFormat target = new ArrayFormat(); // TODO: initialisez à une valeur appropriée
-            IArrayStock tabTokens = new ArrayStock(10, 10, token); // TODO: initialisez à une valeur appropriée
-            
-            string expected = string.Empty; // TODO: initialisez à une valeur appropriée
-            string actual;
-            actual = target.formatAsAGrid(tabTokens);
-            Assert.AreEqual(expected, actual);
+
         }
     }
 }

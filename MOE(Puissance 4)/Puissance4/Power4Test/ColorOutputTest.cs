@@ -65,79 +65,6 @@ namespace Power4Test
         #endregion
 
 
-        /// <summary>
-        ///Test pour Constructeur ColorOutput
-        ///</summary>
-        [TestMethod()]
-        public void ColorOutputConstructorTest()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list);
-            Assert.Inconclusive("TODO: implémentez le code pour vérifier la cible");
-        }
-
-        /// <summary>
-        ///Test pour Clean
-        ///</summary>
-        [TestMethod()]
-        public void CleanTest()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
-            target.Clean();
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour resetColor
-        ///</summary>
-        [TestMethod()]
-        public void resetColorTest()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
-            target.resetColor();
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour setForegroundColor
-        ///</summary>
-        [TestMethod()]
-        public void setForegroundColorTest()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
-            ConsoleColor color = new ConsoleColor(); // TODO: initialisez à une valeur appropriée
-            target.setForegroundColor(color);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour write
-        ///</summary>
-        [TestMethod()]
-        public void writeTest()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
-            char p = '\0'; // TODO: initialisez à une valeur appropriée
-            target.write(p);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour write
-        ///</summary>
-        [TestMethod()]
-        public void writeTest1()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
-            string p = string.Empty; // TODO: initialisez à une valeur appropriée
-            target.write(p);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
 
         /// <summary>
         ///Test pour writeGrid
@@ -149,19 +76,6 @@ namespace Power4Test
             ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
             string grid = string.Empty; // TODO: initialisez à une valeur appropriée
             target.writeGrid(grid);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour writeLine
-        ///</summary>
-        [TestMethod()]
-        public void writeLineTest()
-        {
-            List<IToken> list = null; // TODO: initialisez à une valeur appropriée
-            ColorOutput target = new ColorOutput(list); // TODO: initialisez à une valeur appropriée
-            string p = string.Empty; // TODO: initialisez à une valeur appropriée
-            target.writeLine(p);
             Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
         }
     }

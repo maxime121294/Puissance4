@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="66e90d30-3786-4c7c-b77d-6c31fa6a476d" name="beautin1@B-0-12-21 2015-05-04 16:56:41" runUser="IUTPARIS\beautin1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125361ef-c43f-44fa-87c1-6b1fd96a954f">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="beautin1_B-0-12-21 2015-05-04 16_56_41">
+      <DeploymentItem filename="Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\bin\Debug\ConsoleApplication1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T16:56:41.1476603+02:00" queuing="2015-05-04T16:56:41.2246603+02:00" start="2015-05-04T16:56:41.2536603+02:00" finish="2015-05-04T16:56:41.9986603+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="formatAsAGridTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="de0ed6d7-3437-a8ab-3768-52ed863b4ac4">
+      <Execution id="27a0499d-18d6-4679-9e00-33e42a8c4b39" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ArrayFormatTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="formatAsAGridTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="de0ed6d7-3437-a8ab-3768-52ed863b4ac4" executionId="27a0499d-18d6-4679-9e00-33e42a8c4b39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="27a0499d-18d6-4679-9e00-33e42a8c4b39" testId="de0ed6d7-3437-a8ab-3768-52ed863b4ac4" testName="formatAsAGridTest" computerName="B-0-12-21" duration="00:00:00.1345803" startTime="2015-05-04T16:56:41.3836603+02:00" endTime="2015-05-04T16:56:41.8836603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27a0499d-18d6-4679-9e00-33e42a8c4b39">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreEqual. Attendu : &lt;&gt;, Réel : &lt; . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+ . . . . . . . . . .
+_____________________
+ 1 2 3 4 5 6 7 8 9 10 
+&gt;. </Message>
+          <StackTrace>   à Power4Test.ArrayFormatTest.formatAsAGridTest() dans Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Power4Test\ArrayFormatTest.cs:ligne 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

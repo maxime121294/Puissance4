@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c7ae565f-51fe-41a7-b78b-1a7c2142e049" name="beautin1@B-0-12-21 2015-05-04 17:08:57" runUser="IUTPARIS\beautin1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125361ef-c43f-44fa-87c1-6b1fd96a954f">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="beautin1_B-0-12-21 2015-05-04 17_08_57">
+      <DeploymentItem filename="Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\bin\Debug\ConsoleApplication1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T17:08:57.7346603+02:00" queuing="2015-05-04T17:08:57.8206603+02:00" start="2015-05-04T17:08:57.8296603+02:00" finish="2015-05-04T17:08:58.4426603+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="formatAsAGridTest" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="de0ed6d7-3437-a8ab-3768-52ed863b4ac4">
+      <Execution id="9e151ac4-22a8-4d1d-82b7-534d47e283b1" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ArrayFormatTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="formatAsAGridTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="de0ed6d7-3437-a8ab-3768-52ed863b4ac4" executionId="9e151ac4-22a8-4d1d-82b7-534d47e283b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9e151ac4-22a8-4d1d-82b7-534d47e283b1" testId="de0ed6d7-3437-a8ab-3768-52ed863b4ac4" testName="formatAsAGridTest" computerName="B-0-12-21" duration="00:00:00.0143615" startTime="2015-05-04T17:08:57.9846603+02:00" endTime="2015-05-04T17:08:58.3796603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e151ac4-22a8-4d1d-82b7-534d47e283b1">
+    </UnitTestResult>
+  </Results>
+</TestRun>
