@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class Token : IToken
+    public class Token : IToken
     {
         private char _value;
         public char value
@@ -47,7 +47,8 @@ namespace Power4
             }
         }
 
-        public Token() {
+        public Token()
+        {
             _value = '.';
             _icon = '.';
             _color = ConsoleColor.White;

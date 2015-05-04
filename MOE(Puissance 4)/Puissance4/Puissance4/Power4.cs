@@ -30,13 +30,14 @@ namespace Power4
                 output.writeLine("Saisir le nom du joueur "+(i+1)+" :");
                 players[i].name = input.readLine();
             }
-            int currentPlayer = 0;
+            int currentPlayer = 1;
             string grid = format.formatAsAGrid(stock);
             bool finParti = false;
             int numcol;
             int impactLine = -1;
             while (!finParti)
             {
+                currentPlayer = otherPlayer(currentPlayer);
                 output.Clean();
                 output.writeGrid(grid);
                 while (true)
@@ -57,8 +58,12 @@ namespace Power4
                 }
                 grid = format.formatAsAGrid(stock);
                 finParti = Check.checkEnd(impactLine, numcol, stock);
-                currentPlayer = otherPlayer(currentPlayer);
             }
+            output.Clean();
+            grid = format.formatAsAGrid(stock);
+            output.writeGrid(grid);
+            output.writeLine("Victoire du joueur "+players[currentPlayer].name+ "!");
+            input.readLine();
         }
         private int otherPlayer(int player)
         {
