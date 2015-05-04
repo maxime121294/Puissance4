@@ -14,14 +14,18 @@ namespace Power4Test
         public void addToken()
         {
             IToken empty = new Token();
-            IToken jeton = new Token('+', 'O', ConsoleColor.Yellow);
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
             
             ArrayStock tableau = new ArrayStock(10, 10, empty);
-            IPlayer player = new Player(jeton, 10);
+            IPlayer player = new Player(plein, 10);
 
             int solution = tableau.addToken(player, 15);
-
             Assert.AreEqual(-1, solution);
+
+            ArrayStock tableauPlein = new ArrayStock(10, 10, plein);
+            int TokenPlein = tableauPlein.addToken(player, 9);
+            Assert.AreNotEqual(-1, TokenPlein);
+            Assert.AreEqual(-3, TokenPlein);
         }
     }
 }

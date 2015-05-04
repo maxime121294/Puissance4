@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b11e208d-0780-4443-943a-96bf046e1dbb" name="beautin1@B-0-12-21 2015-05-04 15:48:13" runUser="IUTPARIS\beautin1" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="125361ef-c43f-44fa-87c1-6b1fd96a954f">
+    <Description>Il s'agit des paramètres de test par défaut pour une série de tests locale.</Description>
+    <Deployment enabled="false" runDeploymentRoot="beautin1_B-0-12-21 2015-05-04 15_48_13">
+      <DeploymentItem filename="Z:\PERIODE 3\AGL\Puissance4\MOE(Puissance 4)\Puissance4\Puissance4\bin\Debug\ConsoleApplication1.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-05-04T15:48:13.3376654+02:00" queuing="2015-05-04T15:48:13.4486654+02:00" start="2015-05-04T15:48:13.4576654+02:00" finish="2015-05-04T15:48:14.5376654+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="addToken" storage="z:\periode 3\agl\puissance4\moe(puissance 4)\puissance4\power4test\bin\debug\power4test.dll" id="34cef1d5-0755-462b-12ba-022ed0af3804">
+      <Execution id="04719d62-b5d2-4f5a-9fe3-91b887c723b5" />
+      <TestMethod codeBase="Z:/PERIODE 3/AGL/Puissance4/MOE(Puissance 4)/Puissance4/Power4Test/bin/Debug/Power4Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Power4Test.ArrayStockTest, Power4Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="addToken" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Les résultats ne figurent pas dans une liste" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Tous les résultats chargés" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="34cef1d5-0755-462b-12ba-022ed0af3804" executionId="04719d62-b5d2-4f5a-9fe3-91b887c723b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="04719d62-b5d2-4f5a-9fe3-91b887c723b5" testId="34cef1d5-0755-462b-12ba-022ed0af3804" testName="addToken" computerName="B-0-12-21" duration="00:00:00.4468212" startTime="2015-05-04T15:48:13.6506654+02:00" endTime="2015-05-04T15:48:14.4856654+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04719d62-b5d2-4f5a-9fe3-91b887c723b5">
+      <Output>
+        <ErrorInfo>
+          <Message>Échec de Assert.AreNotEqual. Toute valeur attendue sauf :&lt;-1&gt;. Réel :&lt;-1&gt;. </Message>
+          <StackTrace>   à Power4Test.ArrayStockTest.addToken()
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
