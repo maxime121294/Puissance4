@@ -14,5 +14,7 @@ namespace Power4
 
         int addToken(IPlayer p, int numcol);
 
+
+        void winningCells(List<Coordonnees> c, IToken winning);
     }
 }

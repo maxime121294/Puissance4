@@ -47,6 +47,7 @@
     <Compile Include="ArrayStock.cs" />
     <Compile Include="Check.cs" />
     <Compile Include="ColorOutput.cs" />
+    <Compile Include="Coordonnees.cs" />
     <Compile Include="IArrayFormatter.cs" />
     <Compile Include="IArrayStock.cs" />
     <Compile Include="IInput.cs" />

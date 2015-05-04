@@ -13,12 +13,6 @@ namespace Power4
         private IInput input;
         private IPlayer[] players;
 
-        struct Coordonnees
-        {
-            int x;
-            int y;
-        }
-
         public Power4(IPlayer[] p, IArrayFormatter format, IArrayStock stock, IOutput output, IInput input)
         {
             this.players = p;
@@ -37,6 +31,7 @@ namespace Power4
                 players[i].name = input.readLine();
             }
             int currentPlayer = 1;
+            Coordonnees impactCell;
             string grid = format.formatAsAGrid(stock);
             bool finParti = false;
             int numcol;
@@ -79,7 +74,8 @@ namespace Power4
                     }
                 }
                 grid = format.formatAsAGrid(stock);
-                finParti = Check.checkEnd(impactLine, numcol, stock);
+                impactCell = new Coordonnees(numcol, impactLine);
+                finParti = Check.checkEnd(impactCell, stock);
             }
             output.Clean();
             grid = format.formatAsAGrid(stock);
