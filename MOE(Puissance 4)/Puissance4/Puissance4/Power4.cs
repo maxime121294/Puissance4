@@ -13,6 +13,12 @@ namespace Power4
         private IInput input;
         private IPlayer[] players;
 
+        struct Coordonnees
+        {
+            int x;
+            int y;
+        }
+
         public Power4(IPlayer[] p, IArrayFormatter format, IArrayStock stock, IOutput output, IInput input)
         {
             this.players = p;
@@ -34,6 +40,7 @@ namespace Power4
             string grid = format.formatAsAGrid(stock);
             bool finParti = false;
             int numcol;
+            int errorCode = 0;
             int impactLine = -1;
             while (!finParti)
             {
@@ -49,13 +56,16 @@ namespace Power4
                     }
                     catch (FormatException)
                     {
-                        numcol = -2;
+                        errorCode = -999;
+                        numcol = -1;
                     }
                     impactLine = stock.addToken(players[currentPlayer], numcol);
                     if (impactLine > -1)
                         break;
+                    else if(errorCode > -999)
+                        errorCode = impactLine;
                     //Affichage des cas d'erreurs.
-                    switch(impactLine)
+                    switch(errorCode)
                     {
                         case -3:
                             output.writeLine("Colonne pleine.");
