@@ -65,28 +65,19 @@ namespace Power4Test
 
 
         /// <summary>
-        ///Test pour Constructeur ArrayFormat
-        ///</summary>
-        [TestMethod()]
-        public void ArrayFormatConstructorTest()
-        {
-            ArrayFormat target = new ArrayFormat();
-            Assert.Inconclusive("TODO: implémentez le code pour vérifier la cible");
-        }
-
-        /// <summary>
         ///Test pour formatAsAGrid
         ///</summary>
         [TestMethod()]
         public void formatAsAGridTest()
         {
+            IToken token = new Token('+', 'O', ConsoleColor.Yellow);
             ArrayFormat target = new ArrayFormat(); // TODO: initialisez à une valeur appropriée
-            IArrayStock tabTokens = null; // TODO: initialisez à une valeur appropriée
+            IArrayStock tabTokens = new ArrayStock(10, 10, token); // TODO: initialisez à une valeur appropriée
+            
             string expected = string.Empty; // TODO: initialisez à une valeur appropriée
             string actual;
             actual = target.formatAsAGrid(tabTokens);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
     }
 }
