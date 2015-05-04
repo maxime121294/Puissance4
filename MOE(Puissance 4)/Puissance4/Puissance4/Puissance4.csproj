@@ -53,6 +53,7 @@
     <Compile Include="IPlayer.cs" />
     <Compile Include="Iterator.cs" />
     <Compile Include="IToken.cs" />
+    <Compile Include="Coordonnees.cs" />
     <Compile Include="KeyboardInput.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Power4.cs" />

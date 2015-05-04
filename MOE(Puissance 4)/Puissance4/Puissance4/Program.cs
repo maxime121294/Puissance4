@@ -19,6 +19,7 @@ namespace Power4
            table.Add(jetonVide);
            table.Add(jetonJ1);
            table.Add(jetonJ2);
+           table.Add(jetonVainqueur);
            
            IArrayFormatter formatter = new ArrayFormat();
            IArrayStock stockage = new ArrayStock(Check.nbRows, Check.nbCols, jetonVide);
@@ -29,6 +30,7 @@ namespace Power4
            iterator[3] = new Iterator(1, -1, stockage);
            Check.iterators = iterator;
            Check.empty = jetonVide;
+           Check.winning = jetonVainqueur;
            IPlayer[] p = new IPlayer[2];
            p[0] = new Player(jetonJ1, Check.nbRows * Check.nbCols / 2);
            p[1] = new Player(jetonJ2, Check.nbRows * Check.nbCols / 2);

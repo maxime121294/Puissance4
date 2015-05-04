@@ -78,5 +78,12 @@ namespace Power4
             return insertionOK;
         }
 
+        public void winningCells(List<Coordonnees> c, IToken winning)
+        {
+            for (int i = 0; i < c.Count; i++)
+            {
+                array[c.ElementAt(i).y, c.ElementAt(i).x] = winning;
+            }
+        }
     }
 }

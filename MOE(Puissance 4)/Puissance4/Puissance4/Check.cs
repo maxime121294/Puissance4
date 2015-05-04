@@ -11,23 +11,28 @@ namespace Power4
         public static int nbCols;
         public static IIterator[] iterators;
         public static IToken empty;
+        public static IToken winning;
+
+        
+
 
         // Vérifie si la partie est finie
-        public static bool checkEnd(int impactRow, int impactCol, IArrayStock grilleJeu)
+        public static bool checkEnd(Coordonnees impactCell, IArrayStock grilleJeu)
         {
             foreach(IIterator it in iterators)
             {
+                List<Coordonnees> winningCells = new List<Coordonnees>();
                 // On initialise et on change le vecteur.
-                IToken previousToken = grilleJeu.getValue(impactRow, impactCol);
+                IToken previousToken = grilleJeu.getValue(impactCell.y, impactCell.x);
                 IToken currentToken = null;
                 int chainSize1 = 0;
                 int chainSize2 = 0;
                 int x = 0;
                 int y = 0;
-                if ((impactRow < grilleJeu.nbrows && impactCol < grilleJeu.nbcols))
+                if ((impactCell.y < grilleJeu.nbrows && impactCell.x < grilleJeu.nbcols))
                 {
-                    y = impactRow;
-                    x = impactCol;
+                    y = impactCell.y;
+                    x = impactCell.x;
                     while (true)
                     {
                         // On vérifie les jetons qui suivent.
@@ -45,15 +50,17 @@ namespace Power4
                         if (previousToken.Equals(currentToken))
                         {
                             chainSize1++;
+                            winningCells.Add(new Coordonnees(x, y));
+                            winningCells.Add(new Coordonnees(x - it.x, y - it.y));
                         }
                         else
                         {
                             break;
                         }
                     }
-                    y = impactRow;
-                    x = impactCol;
-                    previousToken = grilleJeu.getValue(impactRow, impactCol);
+                    y = impactCell.y;
+                    x = impactCell.x;
+                    previousToken = grilleJeu.getValue(impactCell.y, impactCell.x);
                     while(true)
                     {
                         // On vérifie les jetons qui précédent.
@@ -71,6 +78,8 @@ namespace Power4
                         if (previousToken.Equals(currentToken))
                         {
                             chainSize2++;
+                            winningCells.Add(new Coordonnees(x, y));
+                            winningCells.Add(new Coordonnees(x + it.x, y + it.y));
                         }
                         else
                         {
@@ -79,7 +88,10 @@ namespace Power4
                     }
                     // On fait la somme des deux, si c'est supérieur ou égal à 4, le joueur a gagné.
                     if (chainSize1 + chainSize2 >= 3)
+                    {
+                        grilleJeu.winningCells(winningCells, winning);
                         return true;
+                    }
                 }
             }
             return false;
