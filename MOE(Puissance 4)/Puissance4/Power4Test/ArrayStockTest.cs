@@ -8,13 +8,13 @@ using Power4;
 namespace Power4Test
 {
     [TestClass]
-    public class ArrayStock
+    public class ArrayStockTest
     {
         [TestMethod]
         public void addToken()
         {
             IToken jeton = new Token();
-            IArrayStock tableau = new ArrayStock(10, 10, jeton);
+            ArrayStock tableau = new ArrayStock(10, 10, jeton);
             IPlayer player = new Player(jeton, 10);
 
             int solution = tableau.addToken(player, 15);
