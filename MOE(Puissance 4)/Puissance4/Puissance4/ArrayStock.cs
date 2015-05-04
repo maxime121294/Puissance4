@@ -70,7 +70,11 @@ namespace Power4
                     p.nbToken = p.nbToken - 1;
                     break;
                 }
-
+                else
+                {
+                    //Colonne pleine.
+                    insertionOK = -3;
+                }
             return insertionOK;
         }
 

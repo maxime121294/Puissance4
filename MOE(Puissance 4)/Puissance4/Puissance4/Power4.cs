@@ -49,12 +49,24 @@ namespace Power4
                     }
                     catch (FormatException)
                     {
-                        numcol = -1;
+                        numcol = -2;
                     }
                     impactLine = stock.addToken(players[currentPlayer], numcol);
                     if (impactLine > -1)
                         break;
-                    output.writeLine("Valeur incorrecte.");
+                    //Affichage des cas d'erreurs.
+                    switch(impactLine)
+                    {
+                        case -3:
+                            output.writeLine("Colonne pleine.");
+                            break;
+                        case -1:
+                            output.writeLine("Numéro de colonne hors du tableau.");
+                            break;
+                        default :
+                            output.writeLine("Valeur incorrecte.");
+                            break;
+                    }
                 }
                 grid = format.formatAsAGrid(stock);
                 finParti = Check.checkEnd(impactLine, numcol, stock);
