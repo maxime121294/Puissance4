@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class Check
+    public class Check
     {
         public static int nbRows;
         public static int nbCols;

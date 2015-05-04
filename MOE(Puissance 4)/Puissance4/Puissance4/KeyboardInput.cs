@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class KeyboardInput : IInput
+    public class KeyboardInput : IInput
     {
         public char read()
         {

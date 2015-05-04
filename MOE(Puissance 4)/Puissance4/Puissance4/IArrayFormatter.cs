@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    interface IArrayFormatter
+    public interface IArrayFormatter
     {
         string formatAsAGrid(IArrayStock tab);
     }

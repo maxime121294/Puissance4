@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

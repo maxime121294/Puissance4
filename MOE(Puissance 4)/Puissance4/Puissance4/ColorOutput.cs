@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class ColorOutput : IOutput
+    public class ColorOutput : IOutput
     {
         public List<IToken> table;
 

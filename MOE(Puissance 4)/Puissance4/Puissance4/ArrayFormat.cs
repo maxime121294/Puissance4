@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class ArrayFormat : IArrayFormatter
+    public class ArrayFormat : IArrayFormatter
     {
         /* Converti en string un IArrayStock
          */

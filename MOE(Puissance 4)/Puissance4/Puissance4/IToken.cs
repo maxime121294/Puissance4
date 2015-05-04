@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    interface IToken
+    public interface IToken
     {
         char value { get; set; }
         char icon { get; set; }

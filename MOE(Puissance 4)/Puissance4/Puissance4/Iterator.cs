@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class Iterator : IIterator
+    public class Iterator : IIterator
     {
         public int x { get; set; }
         public int y { get; set; }

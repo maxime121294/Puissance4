@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    interface IArrayStock
+    public interface IArrayStock
     {
         int nbrows { get; set; }
         int nbcols { get; set; }

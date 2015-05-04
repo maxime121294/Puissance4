@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    class Power4
+    public class Power4
     {
         private IArrayFormatter format;
         private IArrayStock stock;

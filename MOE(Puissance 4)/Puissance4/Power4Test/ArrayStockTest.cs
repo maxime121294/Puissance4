@@ -13,8 +13,10 @@ namespace Power4Test
         [TestMethod]
         public void addToken()
         {
-            IToken jeton = new Token();
-            ArrayStock tableau = new ArrayStock(10, 10, jeton);
+            IToken empty = new Token();
+            IToken jeton = new Token('+', 'O', ConsoleColor.Yellow);
+            
+            ArrayStock tableau = new ArrayStock(10, 10, empty);
             IPlayer player = new Player(jeton, 10);
 
             int solution = tableau.addToken(player, 15);

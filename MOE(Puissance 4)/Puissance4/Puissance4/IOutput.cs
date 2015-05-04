@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    interface IOutput
+    public interface IOutput
     {
         void write(string p);
 

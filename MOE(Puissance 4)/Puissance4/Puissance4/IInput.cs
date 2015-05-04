@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Power4
 {
-    interface IInput
+    public interface IInput
     {
         char read();
 
