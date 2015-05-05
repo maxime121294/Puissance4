@@ -81,18 +81,28 @@ namespace Power4Test
         public void checkEndTest()
         {
             IToken empty = new Token();
-            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+            IToken full = new Token('+', 'O', ConsoleColor.Yellow);
+ 
+            Check.nbCols = 4;
+            Check.nbRows = 4;
+            Check.empty = empty;
+            IArrayStock grilleJeu = new ArrayStock(Check.nbCols, Check.nbRows, empty);
+            
+            IIterator[] iterator = new IIterator[4];
+            iterator[0] = new Iterator(0, 1, grilleJeu);
+            iterator[1] = new Iterator(1, 0, grilleJeu);
+            iterator[2] = new Iterator(1, 1, grilleJeu);
+            iterator[3] = new Iterator(1, -1, grilleJeu);
+            Check.iterators = iterator;
 
-            IPlayer player = new Player(plein, 10);
+            IPlayer player = new Player(full, 10);
 
-            Coordonnees coor = new Coordonnees(1, 2);
+            int jeton = grilleJeu.addToken(player, 3);
+            jeton = grilleJeu.addToken(player, 3);
+            jeton = grilleJeu.addToken(player, 3);
+            jeton = grilleJeu.addToken(player, 3);
 
-            IArrayStock grilleJeu = new ArrayStock(4,4, empty); // TODO: initialisez à une valeur appropriée
-
-            grilleJeu.addToken(player, 4);
-            grilleJeu.addToken(player, 4);
-            grilleJeu.addToken(player, 4);
-            grilleJeu.addToken(player, 4);
+            Coordonnees coor = new Coordonnees(3, jeton);
             bool expected = true; 
             bool actual;
             actual = Check.checkEnd(coor, grilleJeu);
@@ -106,12 +116,17 @@ namespace Power4Test
         [TestMethod()]
         public void checkNumberColonneValideTest()
         {
-            int numcolonne = 0; // TODO: initialisez à une valeur appropriée
-            bool expected = false; // TODO: initialisez à une valeur appropriée
+            Check.nbCols = 4;
+            int numcolonne = 3; 
+            bool expected = true; 
             bool actual;
             actual = Check.checkNumberColonneValide(numcolonne);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            numcolonne = 5;
+            expected = false;
+            actual = Check.checkNumberColonneValide(numcolonne);
+            Assert.AreEqual(expected, actual);
         }
     }
 }
