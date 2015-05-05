@@ -77,13 +77,12 @@ namespace Power4Test
         [TestMethod()]
         public void EqualsTest()
         {
-            IToken target = CreateIToken(); // TODO: initialisez à une valeur appropriée
-            IToken t = null; // TODO: initialisez à une valeur appropriée
-            bool expected = false; // TODO: initialisez à une valeur appropriée
+            IToken target = new Token('+', 'O', ConsoleColor.Black);
+            IToken t = new Token(); 
+            bool expected = false;
             bool actual;
             actual = target.Equals(t);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
@@ -92,13 +91,12 @@ namespace Power4Test
         [TestMethod()]
         public void colorTest()
         {
-            IToken target = CreateIToken(); // TODO: initialisez à une valeur appropriée
-            ConsoleColor expected = new ConsoleColor(); // TODO: initialisez à une valeur appropriée
+            IToken target = new Token('+', 'O', ConsoleColor.Black); 
+            ConsoleColor expected = ConsoleColor.Black; 
             ConsoleColor actual;
             target.color = expected;
             actual = target.color;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
@@ -107,13 +105,17 @@ namespace Power4Test
         [TestMethod()]
         public void iconTest()
         {
-            IToken target = CreateIToken(); // TODO: initialisez à une valeur appropriée
-            char expected = '\0'; // TODO: initialisez à une valeur appropriée
+            IToken target = new Token('+', 'O', ConsoleColor.Black);
+            char expected = 'O';
             char actual;
             target.icon = expected;
             actual = target.icon;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = '0';
+            target.icon = expected;
+            actual = target.icon;
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>

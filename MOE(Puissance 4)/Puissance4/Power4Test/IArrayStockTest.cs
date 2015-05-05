@@ -77,14 +77,16 @@ namespace Power4Test
         [TestMethod()]
         public void addTokenTest()
         {
-            IArrayStock target = CreateIArrayStock(); // TODO: initialisez à une valeur appropriée
-            IPlayer p = null; // TODO: initialisez à une valeur appropriée
-            int numcol = 0; // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
+            IToken empty = new Token();
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+
+            IArrayStock target = new ArrayStock(10, 10, empty);
+            IPlayer p = new Player(plein, 10);
+            int numcol = 15;
+            int expected = -1;
             int actual;
             actual = target.addToken(p, numcol);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
@@ -93,14 +95,16 @@ namespace Power4Test
         [TestMethod()]
         public void getValueTest()
         {
-            IArrayStock target = CreateIArrayStock(); // TODO: initialisez à une valeur appropriée
-            int row = 0; // TODO: initialisez à une valeur appropriée
-            int col = 0; // TODO: initialisez à une valeur appropriée
-            IToken expected = null; // TODO: initialisez à une valeur appropriée
+            IToken empty = new Token();
+            IArrayStock target = new ArrayStock(10, 10, empty); ; // TODO: initialisez à une valeur appropriée
+            
+            int row = 8; // TODO: initialisez à une valeur appropriée
+            int col = 8; // TODO: initialisez à une valeur appropriée
+            IToken[,] expected = new Token[8,8]; // TODO: initialisez à une valeur appropriée
+            
             IToken actual;
             actual = target.getValue(row, col);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
