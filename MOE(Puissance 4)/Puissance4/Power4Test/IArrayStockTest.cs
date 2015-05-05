@@ -96,7 +96,7 @@ namespace Power4Test
         public void getValueTest()
         {
             IToken empty = new Token();
-            IArrayStock target = new ArrayStock(10, 10, empty); ; // TODO: initialisez à une valeur appropriée
+            IArrayStock target = new ArrayStock(10, 10, empty); // TODO: initialisez à une valeur appropriée
             
             int row = 8; // TODO: initialisez à une valeur appropriée
             int col = 8; // TODO: initialisez à une valeur appropriée
@@ -113,13 +113,17 @@ namespace Power4Test
         [TestMethod()]
         public void nbcolsTest()
         {
-            IArrayStock target = CreateIArrayStock(); // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
+            IToken empty = new Token();
+            IArrayStock target = new ArrayStock(10, 10, empty); 
+
+            int expected = 10;
             int actual;
             target.nbcols = expected;
             actual = target.nbcols;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = -1;
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -128,13 +132,16 @@ namespace Power4Test
         [TestMethod()]
         public void nbrowsTest()
         {
-            IArrayStock target = CreateIArrayStock(); // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
+            IToken empty = new Token();
+            IArrayStock target = new ArrayStock(10, 8, empty);
+            int expected = 10; // TODO: initialisez à une valeur appropriée
             int actual;
             target.nbrows = expected;
             actual = target.nbrows;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = -1;
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

@@ -77,13 +77,13 @@ namespace Power4Test
         [TestMethod()]
         public void nameTest()
         {
-            IPlayer target = CreateIPlayer(); // TODO: initialisez à une valeur appropriée
-            string expected = string.Empty; // TODO: initialisez à une valeur appropriée
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+            IPlayer target = new Player(plein, 10);; // TODO: initialisez à une valeur appropriée
+            string expected = "Joueur Test"; // TODO: initialisez à une valeur appropriée
             string actual;
             target.name = expected;
             actual = target.name;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
