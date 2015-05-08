@@ -16,5 +16,9 @@ namespace Power4
 
 
         void winningCells(List<Coordonnees> c, IToken winning);
+
+        bool isFull();
+
+        void reset();
     }
 }

@@ -15,5 +15,10 @@ namespace Power4
             nbToken = n;
             tokenStyle = t;
         }
+
+        public void reset(int n)
+        {
+            nbToken = n;
+        }
     }
 }

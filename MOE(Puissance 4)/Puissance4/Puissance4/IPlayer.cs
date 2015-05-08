@@ -10,5 +10,7 @@ namespace Power4
         string name { get; set; }
         int nbToken { get; set; }
         IToken tokenStyle { get; set; }
+
+        void reset(int n);
     }
 }

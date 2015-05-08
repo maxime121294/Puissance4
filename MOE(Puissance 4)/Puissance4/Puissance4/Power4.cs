@@ -30,58 +30,84 @@ namespace Power4
                 output.writeLine("Saisir le nom du joueur "+(i+1)+" :");
                 players[i].name = input.readLine();
             }
-            int currentPlayer = 1;
-            Coordonnees impactCell;
-            string grid = format.formatAsAGrid(stock);
-            bool finParti = false;
-            int numcol;
-            int errorCode = 0;
-            int impactLine = -1;
-            while (!finParti)
+            String choice = "";
+            do
             {
-                currentPlayer = otherPlayer(currentPlayer);
-                output.Clean();
-                output.writeGrid(grid);
-                while (true)
+                int currentPlayer = 1;
+                stock.reset();
+                Coordonnees impactCell;
+                string grid = format.formatAsAGrid(stock);
+                bool finParti = false;
+                int numcol;
+                int errorCode = 0;
+                int impactLine = -1;
+                for (int i = 0; i < players.Length; i++)
                 {
-                    output.writeLine(players[currentPlayer].name+", entrez le numero de colonne où jouer : ");
-                    try
-                    {
-                        numcol = Convert.ToInt16(input.readLine()) - 1;
-                    }
-                    catch (FormatException)
-                    {
-                        errorCode = -999;
-                        numcol = -1;
-                    }
-                    impactLine = stock.addToken(players[currentPlayer], numcol);
-                    if (impactLine > -1)
-                        break;
-                    else if(errorCode > -999)
-                        errorCode = impactLine;
-                    //Affichage des cas d'erreurs.
-                    switch(errorCode)
-                    {
-                        case -3:
-                            output.writeLine("Colonne pleine.");
-                            break;
-                        case -1:
-                            output.writeLine("Numéro de colonne hors du tableau.");
-                            break;
-                        default :
-                            output.writeLine("Valeur incorrecte.");
-                            break;
-                    }
+                    players[i].reset((stock.nbcols * stock.nbrows) / players.Length);
                 }
-                grid = format.formatAsAGrid(stock);
-                impactCell = new Coordonnees(numcol, impactLine);
-                finParti = Check.checkEnd(impactCell, stock);
+                while (!finParti)
+                {
+                    currentPlayer = otherPlayer(currentPlayer);
+                    output.Clean();
+                    output.writeGrid(grid);
+                    while (true)
+                    {
+                        output.writeLine(players[currentPlayer].name + ", entrez le numero de colonne où jouer : ");
+                        try
+                        {
+                            numcol = Convert.ToInt16(input.readLine()) - 1;
+                        }
+                        catch (FormatException)
+                        {
+                            errorCode = -999;
+                            numcol = -1;
+                        }
+                        impactLine = stock.addToken(players[currentPlayer], numcol);
+                        if (impactLine > -1)
+                            break;
+                        else if (errorCode > -999)
+                            errorCode = impactLine;
+                        //Affichage des cas d'erreurs.
+                        switch (errorCode)
+                        {
+                            case -3:
+                                output.writeLine("Colonne pleine.");
+                                break;
+                            case -1:
+                                output.writeLine("Numéro de colonne hors du tableau.");
+                                break;
+                            default:
+                                output.writeLine("Valeur incorrecte.");
+                                break;
+                        }
+                    }
+                    grid = format.formatAsAGrid(stock);
+                    impactCell = new Coordonnees(numcol, impactLine);
+                    finParti = Check.checkEnd(impactCell, stock);
+                    endOutput(currentPlayer, ref grid, ref finParti);
+                }
+                output.writeLine("Entrer R pour rejouer, n'importe quelle autre touche pour quitter.");
+                choice = input.readLine();
             }
-            output.Clean();
-            grid = format.formatAsAGrid(stock);
-            output.writeGrid(grid);
-            output.writeLine("Victoire du joueur "+players[currentPlayer].name+ "!");
-            input.readLine();
+            while (choice == "R");
+            
+        }
+
+        private void endOutput(int currentPlayer, ref string grid, ref bool finParti)
+        {
+            if (finParti || stock.isFull())
+            {
+                output.Clean();
+                grid = format.formatAsAGrid(stock);
+                output.writeGrid(grid);
+                if (finParti)
+                    output.writeLine("Victoire du joueur " + players[currentPlayer].name + "!");
+                if (stock.isFull())
+                {
+                    finParti = stock.isFull();
+                    output.writeLine("Match nul !");
+                }
+            }
         }
         private int otherPlayer(int player)
         {

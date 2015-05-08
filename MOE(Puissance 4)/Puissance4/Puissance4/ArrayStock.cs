@@ -10,6 +10,7 @@ namespace Power4
         public IToken[,] array;
         private int _nbrows;
         private int _nbcols;
+        private IToken empty;
         public int nbrows
         {
             get
@@ -45,7 +46,24 @@ namespace Power4
             for (int i = 0; i < _nbrows; i++)
                 for (int j = 0; j < _nbcols; j++)
                     array[i,j] = empty;
+            this.empty = empty;
 
+        }
+
+        public bool isFull()
+        {
+            for (int i = 0; i < _nbrows; i++)
+                for (int j = 0; j < _nbcols; j++)
+                    if(array[i, j] == empty)
+                        return false;
+            return true;
+        }
+
+        public void reset()
+        {
+            for (int i = 0; i < _nbrows; i++)
+                for (int j = 0; j < _nbcols; j++)
+                    array[i, j] = empty;
         }
 
         public IToken getValue (int row, int col){
