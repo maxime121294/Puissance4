@@ -34,17 +34,13 @@ namespace Power4
             do
             {
                 int currentPlayer = 1;
-                stock.reset();
+                resetGame();
                 Coordonnees impactCell;
                 string grid = format.formatAsAGrid(stock);
                 bool finParti = false;
                 int numcol;
                 int errorCode = 0;
                 int impactLine = -1;
-                for (int i = 0; i < players.Length; i++)
-                {
-                    players[i].reset((stock.nbcols * stock.nbrows) / players.Length);
-                }
                 while (!finParti)
                 {
                     currentPlayer = otherPlayer(currentPlayer);
@@ -67,19 +63,7 @@ namespace Power4
                             break;
                         else if (errorCode > -999)
                             errorCode = impactLine;
-                        //Affichage des cas d'erreurs.
-                        switch (errorCode)
-                        {
-                            case -3:
-                                output.writeLine("Colonne pleine.");
-                                break;
-                            case -1:
-                                output.writeLine("Numéro de colonne hors du tableau.");
-                                break;
-                            default:
-                                output.writeLine("Valeur incorrecte.");
-                                break;
-                        }
+                        errorMessages(errorCode);
                     }
                     grid = format.formatAsAGrid(stock);
                     impactCell = new Coordonnees(numcol, impactLine);
@@ -91,6 +75,32 @@ namespace Power4
             }
             while (choice == "R");
             
+        }
+
+        private void resetGame()
+        {
+            stock.reset();
+            for (int i = 0; i < players.Length; i++)
+            {
+                players[i].reset((stock.nbcols * stock.nbrows) / players.Length);
+            }
+        }
+
+        private void errorMessages(int errorCode)
+        {
+            //Affichage des cas d'erreurs.
+            switch (errorCode)
+            {
+                case -3:
+                    output.writeLine("Colonne pleine.");
+                    break;
+                case -1:
+                    output.writeLine("Numéro de colonne hors du tableau.");
+                    break;
+                default:
+                    output.writeLine("Valeur incorrecte.");
+                    break;
+            }
         }
 
         private void endOutput(int currentPlayer, ref string grid, ref bool finParti)
