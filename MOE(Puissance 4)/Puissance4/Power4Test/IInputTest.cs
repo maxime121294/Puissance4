@@ -77,12 +77,11 @@ namespace Power4Test
         [TestMethod()]
         public void readTest()
         {
-            IInput target = CreateIInput(); // TODO: initialisez à une valeur appropriée
-            char expected = '\0'; // TODO: initialisez à une valeur appropriée
+            IInput target = new KeyboardInput(); 
+            char expected = '\0'; 
             char actual;
             actual = target.read();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -91,12 +90,11 @@ namespace Power4Test
         [TestMethod()]
         public void readLineTest()
         {
-            IInput target = CreateIInput(); // TODO: initialisez à une valeur appropriée
-            string expected = string.Empty; // TODO: initialisez à une valeur appropriée
+            IInput target = new KeyboardInput();
+            string expected = "";
             string actual;
             actual = target.readLine();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

@@ -70,11 +70,11 @@ namespace Power4Test
         [TestMethod()]
         public void IteratorConstructorTest()
         {
-            int a = 0; // TODO: initialisez à une valeur appropriée
-            int b = 0; // TODO: initialisez à une valeur appropriée
-            IArrayStock stock = null; // TODO: initialisez à une valeur appropriée
+            int a = 10;
+            int b = 10;
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
             Iterator target = new Iterator(a, b, stock);
-            Assert.Inconclusive("TODO: implémentez le code pour vérifier la cible");
         }
 
         /// <summary>
@@ -83,17 +83,20 @@ namespace Power4Test
         [TestMethod()]
         public void nextTest()
         {
-            int a = 0; // TODO: initialisez à une valeur appropriée
-            int b = 0; // TODO: initialisez à une valeur appropriée
-            IArrayStock stock = null; // TODO: initialisez à une valeur appropriée
-            Iterator target = new Iterator(a, b, stock); // TODO: initialisez à une valeur appropriée
-            int col = 0; // TODO: initialisez à une valeur appropriée
-            int row = 0; // TODO: initialisez à une valeur appropriée
-            IToken expected = null; // TODO: initialisez à une valeur appropriée
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            IIterator target = new Iterator(10, 10, stock);
+            int y = 5;
+            int x = 5;
+
+            IToken expected = new Token('+', 'O', ConsoleColor.Yellow);
             IToken actual;
-            actual = target.next(col, row);
+            expected = stock.getValue(15, 15);
+            actual = target.next(y, x);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = stock.getValue(14, 14);
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>

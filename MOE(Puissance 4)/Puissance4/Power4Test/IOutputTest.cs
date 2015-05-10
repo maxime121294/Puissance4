@@ -66,79 +66,9 @@ namespace Power4Test
 
         internal virtual IOutput CreateIOutput()
         {
-            // TODO: instanciez une classe concrète appropriée.
-            IOutput target = null;
+            System.Collections.Generic.List<IToken> table = new System.Collections.Generic.List<IToken>();
+            IOutput target = new ColorOutput(table);
             return target;
-        }
-
-        /// <summary>
-        ///Test pour Clean
-        ///</summary>
-        [TestMethod()]
-        public void CleanTest()
-        {
-            IOutput target = CreateIOutput(); // TODO: initialisez à une valeur appropriée
-            target.Clean();
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour resetColor
-        ///</summary>
-        [TestMethod()]
-        public void resetColorTest()
-        {
-            IOutput target = CreateIOutput(); // TODO: initialisez à une valeur appropriée
-            target.resetColor();
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour setForegroundColor
-        ///</summary>
-        [TestMethod()]
-        public void setForegroundColorTest()
-        {
-            IOutput target = CreateIOutput(); // TODO: initialisez à une valeur appropriée
-            ConsoleColor c = new ConsoleColor(); // TODO: initialisez à une valeur appropriée
-            target.setForegroundColor(c);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour write
-        ///</summary>
-        [TestMethod()]
-        public void writeTest()
-        {
-            IOutput target = CreateIOutput(); // TODO: initialisez à une valeur appropriée
-            string p = string.Empty; // TODO: initialisez à une valeur appropriée
-            target.write(p);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour writeGrid
-        ///</summary>
-        [TestMethod()]
-        public void writeGridTest()
-        {
-            IOutput target = CreateIOutput(); // TODO: initialisez à une valeur appropriée
-            string grid = string.Empty; // TODO: initialisez à une valeur appropriée
-            target.writeGrid(grid);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
-        }
-
-        /// <summary>
-        ///Test pour writeLine
-        ///</summary>
-        [TestMethod()]
-        public void writeLineTest()
-        {
-            IOutput target = CreateIOutput(); // TODO: initialisez à une valeur appropriée
-            string p = string.Empty; // TODO: initialisez à une valeur appropriée
-            target.writeLine(p);
-            Assert.Inconclusive("Une méthode qui ne retourne pas une valeur ne peut pas être vérifiée.");
         }
     }
 }

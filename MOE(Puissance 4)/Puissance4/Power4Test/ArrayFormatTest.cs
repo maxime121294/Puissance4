@@ -70,7 +70,14 @@ namespace Power4Test
         [TestMethod()]
         public void formatAsAGridTest()
         {
-
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            ArrayFormat format = new ArrayFormat();
+            
+            String expected = "";
+            String actual = format.formatAsAGrid(stock);
+            
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

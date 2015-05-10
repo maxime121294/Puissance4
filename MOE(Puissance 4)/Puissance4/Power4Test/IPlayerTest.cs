@@ -66,8 +66,8 @@ namespace Power4Test
 
         internal virtual IPlayer CreateIPlayer()
         {
-            // TODO: instanciez une classe concrète appropriée.
-            IPlayer target = null;
+            IToken t = new Token('+', 'O', ConsoleColor.Yellow);
+            IPlayer target = new Player(t,1);
             return target;
         }
 
@@ -77,12 +77,19 @@ namespace Power4Test
         [TestMethod()]
         public void nameTest()
         {
-            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
-            IPlayer target = new Player(plein, 10);; // TODO: initialisez à une valeur appropriée
-            string expected = "Joueur Test"; // TODO: initialisez à une valeur appropriée
+            IToken t = new Token('+', 'O', ConsoleColor.Yellow);
+            int n = 1;
+            Player target = new Player(t, n);
+            string expected = "Testeur";
             string actual;
             target.name = expected;
             actual = target.name;
+            Assert.AreEqual(expected, actual);
+
+            expected = "Testeur N°2";
+            Assert.AreNotEqual(expected, actual);
+
+            expected = "Testeur";
             Assert.AreEqual(expected, actual);
         }
 
@@ -92,13 +99,14 @@ namespace Power4Test
         [TestMethod()]
         public void nbTokenTest()
         {
-            IPlayer target = CreateIPlayer(); // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+            IPlayer target = new Player(plein, 10);
+
+            int expected = 10; 
             int actual;
             target.nbToken = expected;
             actual = target.nbToken;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
 
         /// <summary>
@@ -107,13 +115,17 @@ namespace Power4Test
         [TestMethod()]
         public void tokenStyleTest()
         {
-            IPlayer target = CreateIPlayer(); // TODO: initialisez à une valeur appropriée
-            IToken expected = null; // TODO: initialisez à une valeur appropriée
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+            IPlayer target = new Player(plein, 10);
+
+            IToken expected = new Token('+', 'O', ConsoleColor.Yellow);
             IToken actual;
             target.tokenStyle = expected;
             actual = target.tokenStyle;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = new Token('+', 'O', ConsoleColor.Black);
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

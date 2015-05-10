@@ -66,8 +66,7 @@ namespace Power4Test
 
         internal virtual IArrayFormatter CreateIArrayFormatter()
         {
-            // TODO: instanciez une classe concrète appropriée.
-            IArrayFormatter target = null;
+            IArrayFormatter target = new ArrayFormat();
             return target;
         }
 
@@ -77,13 +76,15 @@ namespace Power4Test
         [TestMethod()]
         public void formatAsAGridTest()
         {
-            IArrayFormatter target = CreateIArrayFormatter(); // TODO: initialisez à une valeur appropriée
-            IArrayStock tab = null; // TODO: initialisez à une valeur appropriée
-            string expected = string.Empty; // TODO: initialisez à une valeur appropriée
+            IArrayFormatter target = new ArrayFormat(); 
+            IToken empty = new Token();
+            IArrayStock tab = new ArrayStock(10,10,empty);
+
+            string expected = "";
             string actual;
             actual = target.formatAsAGrid(tab);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+            
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

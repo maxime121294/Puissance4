@@ -96,15 +96,19 @@ namespace Power4Test
         public void getValueTest()
         {
             IToken empty = new Token();
-            IArrayStock target = new ArrayStock(10, 10, empty); // TODO: initialisez à une valeur appropriée
-            
-            int row = 8; // TODO: initialisez à une valeur appropriée
-            int col = 8; // TODO: initialisez à une valeur appropriée
-            IToken[,] expected = new Token[8,8]; // TODO: initialisez à une valeur appropriée
-            
+            IArrayStock target = new ArrayStock(10, 10, empty);
+            IToken[,] expected = new Token[8, 8];
+
+            int row = 8;
+            int col = 8; 
             IToken actual;
             actual = target.getValue(row, col);
-            Assert.AreEqual(expected, actual);
+            Assert.IsNotNull(actual);
+
+            row = 12;
+            col = 12;
+            actual = target.getValue(row, col);
+            Assert.IsNull(actual);
         }
 
         /// <summary>
