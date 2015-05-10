@@ -77,14 +77,21 @@ namespace Power4Test
         [TestMethod()]
         public void nextTest()
         {
-            IIterator target = CreateIIterator(); // TODO: initialisez à une valeur appropriée
-            int y = 0; // TODO: initialisez à une valeur appropriée
-            int x = 0; // TODO: initialisez à une valeur appropriée
-            IToken expected = null; // TODO: initialisez à une valeur appropriée
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            IIterator target = new Iterator(10, 10, stock); 
+            
+            int y = 5;
+            int x = 5;
+
+            IToken expected = new Token('+', 'O', ConsoleColor.Yellow);
             IToken actual;
+            expected = stock.getValue(15, 15);
             actual = target.next(y, x);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = stock.getValue(14, 14);
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -93,14 +100,20 @@ namespace Power4Test
         [TestMethod()]
         public void previousTest()
         {
-            IIterator target = CreateIIterator(); // TODO: initialisez à une valeur appropriée
-            int y = 0; // TODO: initialisez à une valeur appropriée
-            int x = 0; // TODO: initialisez à une valeur appropriée
-            IToken expected = null; // TODO: initialisez à une valeur appropriée
+            int a = 5;
+            int b = 5;
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            Iterator target = new Iterator(a, b, stock);
+            int col = 1;
+            int row = 1;
+            IToken expected = stock.getValue(4, 4);
             IToken actual;
-            actual = target.previous(y, x);
+            actual = target.previous(col, row);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = stock.getValue(6, 6);
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -109,13 +122,19 @@ namespace Power4Test
         [TestMethod()]
         public void xTest()
         {
-            IIterator target = CreateIIterator(); // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
+            int a = 5;
+            int b = 4;
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            Iterator target = new Iterator(a, b, stock);
+
+            int expected = 5;
             int actual;
-            target.x = expected;
             actual = target.x;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = 4;
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -124,13 +143,19 @@ namespace Power4Test
         [TestMethod()]
         public void yTest()
         {
-            IIterator target = CreateIIterator(); // TODO: initialisez à une valeur appropriée
-            int expected = 0; // TODO: initialisez à une valeur appropriée
+            int a = 4;
+            int b = 5;
+            IToken empty = new Token();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            Iterator target = new Iterator(a, b, stock);
+
+            int expected = 5;
             int actual;
-            target.y = expected;
             actual = target.y;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
+
+            expected = 4;
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

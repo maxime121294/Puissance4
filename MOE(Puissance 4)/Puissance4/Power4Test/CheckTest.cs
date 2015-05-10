@@ -65,16 +65,6 @@ namespace Power4Test
 
 
         /// <summary>
-        ///Test pour Constructeur Check
-        ///</summary>
-        [TestMethod()]
-        public void CheckConstructorTest()
-        {
-            Check target = new Check();
-            Assert.Inconclusive("TODO: implémentez le code pour vérifier la cible");
-        }
-
-        /// <summary>
         ///Test pour checkEnd
         ///</summary>
         [TestMethod()]

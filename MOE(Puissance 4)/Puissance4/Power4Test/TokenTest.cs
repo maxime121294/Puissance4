@@ -7,19 +7,19 @@ namespace Power4Test
     
     
     /// <summary>
-    ///Classe de test pour ITokenTest, destinée à contenir tous
-    ///les tests unitaires ITokenTest
+    ///This is a test class for TokenTest and is intended
+    ///to contain all TokenTest Unit Tests
     ///</summary>
     [TestClass()]
-    public class ITokenTest
+    public class TokenTest
     {
 
 
         private TestContext testContextInstance;
 
         /// <summary>
-        ///Obtient ou définit le contexte de test qui fournit
-        ///des informations sur la série de tests active ainsi que ses fonctionnalités.
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
         ///</summary>
         public TestContext TestContext
         {
@@ -33,29 +33,29 @@ namespace Power4Test
             }
         }
 
-        #region Attributs de tests supplémentaires
+        #region Additional test attributes
         // 
-        //Vous pouvez utiliser les attributs supplémentaires suivants lorsque vous écrivez vos tests :
+        //You can use the following additional attributes as you write your tests:
         //
-        //Utilisez ClassInitialize pour exécuter du code avant d'exécuter le premier test dans la classe
+        //Use ClassInitialize to run code before running the first test in the class
         //[ClassInitialize()]
         //public static void MyClassInitialize(TestContext testContext)
         //{
         //}
         //
-        //Utilisez ClassCleanup pour exécuter du code après que tous les tests ont été exécutés dans une classe
+        //Use ClassCleanup to run code after all tests in a class have run
         //[ClassCleanup()]
         //public static void MyClassCleanup()
         //{
         //}
         //
-        //Utilisez TestInitialize pour exécuter du code avant d'exécuter chaque test
+        //Use TestInitialize to run code before running each test
         //[TestInitialize()]
         //public void MyTestInitialize()
         //{
         //}
         //
-        //Utilisez TestCleanup pour exécuter du code après que chaque test a été exécuté
+        //Use TestCleanup to run code after each test has run
         //[TestCleanup()]
         //public void MyTestCleanup()
         //{
@@ -64,36 +64,51 @@ namespace Power4Test
         #endregion
 
 
-        internal virtual IToken CreateIToken()
+        /// <summary>
+        ///A test for Token Constructor
+        ///</summary>
+        [TestMethod()]
+        public void TokenConstructorTest()
         {
-            IToken target = new Token('+', 'O', ConsoleColor.Black);
-            return target;
+            char valeur = '+'; 
+            char icone = 'O'; 
+            ConsoleColor couleur = ConsoleColor.Black;
+            Token target = new Token(valeur, icone, couleur);
         }
 
         /// <summary>
-        ///Test pour Equals
+        ///A test for Token Constructor
+        ///</summary>
+        [TestMethod()]
+        public void TokenConstructorTest1()
+        {
+            Token target = new Token();
+        }
+
+        /// <summary>
+        ///A test for Equals
         ///</summary>
         [TestMethod()]
         public void EqualsTest()
         {
             IToken target = new Token('+', 'O', ConsoleColor.Black);
-            IToken t = new Token(); 
+            IToken t = new Token();
             bool expected = false;
             bool actual;
             actual = target.Equals(t);
-            
+
             Assert.AreEqual(expected, actual);
         }
 
         /// <summary>
-        ///Test pour color
+        ///A test for color
         ///</summary>
         [TestMethod()]
         public void colorTest()
         {
-            IToken target = new Token('+', 'O', ConsoleColor.Yellow);
-
-            ConsoleColor expected = ConsoleColor.Yellow;
+            IToken target = new Token('+', 'O', ConsoleColor.Black);
+            
+            ConsoleColor expected = ConsoleColor.Black;
             ConsoleColor actual;
             actual = target.color;
             Assert.AreEqual(expected, actual);
@@ -103,7 +118,7 @@ namespace Power4Test
         }
 
         /// <summary>
-        ///Test pour icon
+        ///A test for icon
         ///</summary>
         [TestMethod()]
         public void iconTest()
@@ -122,12 +137,13 @@ namespace Power4Test
         }
 
         /// <summary>
-        ///Test pour value
+        ///A test for value
         ///</summary>
         [TestMethod()]
         public void valueTest()
         {
-            IToken target = CreateIToken();
+            Token target = new Token('+', 'O', ConsoleColor.Black);
+            
             char expected = '+';
             char actual;
             target.value = expected;

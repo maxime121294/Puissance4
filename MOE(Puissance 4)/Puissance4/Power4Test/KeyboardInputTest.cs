@@ -7,19 +7,19 @@ namespace Power4Test
     
     
     /// <summary>
-    ///Classe de test pour IInputTest, destinée à contenir tous
-    ///les tests unitaires IInputTest
+    ///This is a test class for KeyboardInputTest and is intended
+    ///to contain all KeyboardInputTest Unit Tests
     ///</summary>
     [TestClass()]
-    public class IInputTest
+    public class KeyboardInputTest
     {
 
 
         private TestContext testContextInstance;
 
         /// <summary>
-        ///Obtient ou définit le contexte de test qui fournit
-        ///des informations sur la série de tests active ainsi que ses fonctionnalités.
+        ///Gets or sets the test context which provides
+        ///information about and functionality for the current test run.
         ///</summary>
         public TestContext TestContext
         {
@@ -33,29 +33,29 @@ namespace Power4Test
             }
         }
 
-        #region Attributs de tests supplémentaires
+        #region Additional test attributes
         // 
-        //Vous pouvez utiliser les attributs supplémentaires suivants lorsque vous écrivez vos tests :
+        //You can use the following additional attributes as you write your tests:
         //
-        //Utilisez ClassInitialize pour exécuter du code avant d'exécuter le premier test dans la classe
+        //Use ClassInitialize to run code before running the first test in the class
         //[ClassInitialize()]
         //public static void MyClassInitialize(TestContext testContext)
         //{
         //}
         //
-        //Utilisez ClassCleanup pour exécuter du code après que tous les tests ont été exécutés dans une classe
+        //Use ClassCleanup to run code after all tests in a class have run
         //[ClassCleanup()]
         //public static void MyClassCleanup()
         //{
         //}
         //
-        //Utilisez TestInitialize pour exécuter du code avant d'exécuter chaque test
+        //Use TestInitialize to run code before running each test
         //[TestInitialize()]
         //public void MyTestInitialize()
         //{
         //}
         //
-        //Utilisez TestCleanup pour exécuter du code après que chaque test a été exécuté
+        //Use TestCleanup to run code after each test has run
         //[TestCleanup()]
         //public void MyTestCleanup()
         //{
@@ -64,27 +64,30 @@ namespace Power4Test
         #endregion
 
 
-        internal virtual IInput CreateIInput()
+        /// <summary>
+        ///A test for KeyboardInput Constructor
+        ///</summary>
+        [TestMethod()]
+        public void KeyboardInputConstructorTest()
         {
-            IInput target = new KeyboardInput(); ;
-            return target;
+            KeyboardInput target = new KeyboardInput();
         }
 
         /// <summary>
-        ///Test pour read
+        ///A test for read
         ///</summary>
         [TestMethod()]
         public void readTest()
         {
-            IInput target = new KeyboardInput(); 
-            char expected = '\0'; 
+            KeyboardInput target = new KeyboardInput();
+            char expected = '\0';
             char actual;
             actual = target.read();
             Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
-        ///Test pour readLine
+        ///A test for readLine
         ///</summary>
         [TestMethod()]
         public void readLineTest()
