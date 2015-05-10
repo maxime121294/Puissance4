@@ -81,12 +81,14 @@ namespace Power4Test
         [TestMethod()]
         public void resetTest()
         {
-            IToken t = new Token('+', 'O', ConsoleColor.Yellow); // TODO: Initialize to an appropriate value
-            int n = 0; // TODO: Initialize to an appropriate value
-            Player target = new Player(t, n); // TODO: Initialize to an appropriate value
-            int n1 = 0; // TODO: Initialize to an appropriate value
+            IToken t = new Token('+', 'O', ConsoleColor.Yellow); 
+            int n = 10; 
+            Player target = new Player(t, n); 
+            int n1 = 9; 
             target.reset(n1);
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
+            int actual = n1;
+            int expected = target.nbToken;
+            Assert.AreEqual(expected, actual);
         }
 
         /// <summary>
@@ -136,15 +138,17 @@ namespace Power4Test
         [TestMethod()]
         public void tokenStyleTest()
         {
-            IToken t = null; // TODO: Initialize to an appropriate value
-            int n = 0; // TODO: Initialize to an appropriate value
-            Player target = new Player(t, n); // TODO: Initialize to an appropriate value
-            IToken expected = null; // TODO: Initialize to an appropriate value
+            IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
+            IPlayer target = new Player(plein, 10);
+
+            IToken expected = new Token('+', 'O', ConsoleColor.Yellow);
             IToken actual;
             target.tokenStyle = expected;
             actual = target.tokenStyle;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+
+            expected = new Token('+', 'O', ConsoleColor.Black);
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

@@ -66,8 +66,7 @@ namespace Power4Test
 
         internal virtual IInput CreateIInput()
         {
-            // TODO: instanciez une classe concrète appropriée.
-            IInput target = null;
+            IInput target = new KeyboardInput(); ;
             return target;
         }
 

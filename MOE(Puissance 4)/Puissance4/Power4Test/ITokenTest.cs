@@ -66,8 +66,7 @@ namespace Power4Test
 
         internal virtual IToken CreateIToken()
         {
-            // TODO: instanciez une classe concrète appropriée.
-            IToken target = null;
+            IToken target = new Token('+', 'O', ConsoleColor.Black);
             return target;
         }
 
@@ -128,13 +127,12 @@ namespace Power4Test
         [TestMethod()]
         public void valueTest()
         {
-            IToken target = CreateIToken(); // TODO: initialisez à une valeur appropriée
-            char expected = '\0'; // TODO: initialisez à une valeur appropriée
+            IToken target = CreateIToken();
+            char expected = '+';
             char actual;
             target.value = expected;
             actual = target.value;
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Vérifiez l\'exactitude de cette méthode de test.");
         }
     }
 }

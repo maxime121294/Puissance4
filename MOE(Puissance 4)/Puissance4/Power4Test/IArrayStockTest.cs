@@ -66,8 +66,8 @@ namespace Power4Test
 
         internal virtual IArrayStock CreateIArrayStock()
         {
-            // TODO: instanciez une classe concrète appropriée.
-            IArrayStock target = null;
+            IToken empty = new Token();
+            IArrayStock target = new ArrayStock(10, 10, empty); ;
             return target;
         }
 
@@ -79,12 +79,19 @@ namespace Power4Test
         {
             IToken empty = new Token();
             IToken plein = new Token('+', 'O', ConsoleColor.Yellow);
-
             IArrayStock target = new ArrayStock(10, 10, empty);
             IPlayer p = new Player(plein, 10);
+            
+            // Le jeton est endehors du tableau
             int numcol = 15;
             int expected = -1;
             int actual;
+            actual = target.addToken(p, numcol);
+            Assert.AreEqual(expected, actual);
+
+            // Le jeton est accepté
+            numcol = 8;
+            expected = 0;
             actual = target.addToken(p, numcol);
             Assert.AreEqual(expected, actual);
         }

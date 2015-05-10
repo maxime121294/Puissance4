@@ -90,7 +90,7 @@ namespace Power4Test
             actual = target.next(y, x);
             Assert.AreEqual(expected, actual);
 
-            expected = stock.getValue(14, 15);
+            expected = stock.getValue(14, 14);
             Assert.AreNotEqual(expected, actual);
         }
 
@@ -100,18 +100,20 @@ namespace Power4Test
         [TestMethod()]
         public void previousTest()
         {
+            int a = 5;
+            int b = 5;
             IToken empty = new Token();
             IArrayStock stock = new ArrayStock(10, 10, empty);
-            IIterator target = new Iterator(10, 10, stock);
-
-            int y = 5;
-            int x = 5;
-           
-            IToken expected = null; // TODO: initialisez à une valeur appropriée
+            Iterator target = new Iterator(a, b, stock);
+            int col = 1;
+            int row = 1;
+            IToken expected = stock.getValue(4, 4);
             IToken actual;
-            actual = target.previous(y, x);
-            
+            actual = target.previous(col, row);
             Assert.AreEqual(expected, actual);
+
+            expected = stock.getValue(6, 6);
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -120,16 +122,19 @@ namespace Power4Test
         [TestMethod()]
         public void xTest()
         {
+            int a = 5;
+            int b = 4;
             IToken empty = new Token();
             IArrayStock stock = new ArrayStock(10, 10, empty);
-            IIterator target = new Iterator(5, 6, stock);
+            Iterator target = new Iterator(a, b, stock);
 
-            int expected = 5; 
+            int expected = 5;
             int actual;
-            target.x = expected;
             actual = target.x;
-            
             Assert.AreEqual(expected, actual);
+
+            expected = 4;
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -138,16 +143,19 @@ namespace Power4Test
         [TestMethod()]
         public void yTest()
         {
+            int a = 4;
+            int b = 5;
             IToken empty = new Token();
             IArrayStock stock = new ArrayStock(10, 10, empty);
-            IIterator target = new Iterator(6, 5, stock);
+            Iterator target = new Iterator(a, b, stock);
 
-            int expected = 5; 
+            int expected = 5;
             int actual;
-            target.y = expected;
             actual = target.y;
-            
             Assert.AreEqual(expected, actual);
+
+            expected = 4;
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

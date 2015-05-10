@@ -79,12 +79,11 @@ namespace Power4Test
         [TestMethod()]
         public void readTest()
         {
-            KeyboardInput target = new KeyboardInput(); // TODO: Initialize to an appropriate value
-            char expected = '\0'; // TODO: Initialize to an appropriate value
+            KeyboardInput target = new KeyboardInput();
+            char expected = '\0';
             char actual;
             actual = target.read();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.AreNotEqual(expected, actual);
         }
 
         /// <summary>
@@ -93,12 +92,11 @@ namespace Power4Test
         [TestMethod()]
         public void readLineTest()
         {
-            KeyboardInput target = new KeyboardInput(); // TODO: Initialize to an appropriate value
-            string expected = string.Empty; // TODO: Initialize to an appropriate value
+            IInput target = new KeyboardInput();
+            string expected = "";
             string actual;
             actual = target.readLine();
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }

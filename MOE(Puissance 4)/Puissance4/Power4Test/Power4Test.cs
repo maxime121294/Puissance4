@@ -108,14 +108,14 @@ namespace Power4Test
         [DeploymentItem("ConsoleApplication1.exe")]
         public void otherPlayerTest()
         {
-            PrivateObject param0 = null; // TODO: Initialize to an appropriate value
-            Power4_Accessor target = new Power4_Accessor(param0); // TODO: Initialize to an appropriate value
-            int player = 0; // TODO: Initialize to an appropriate value
-            int expected = 0; // TODO: Initialize to an appropriate value
+            PrivateObject param0 = null;
+            Power4_Accessor target = new Power4_Accessor(param0); 
+            int player = 1; 
+            int expected = 1; 
             int actual;
             actual = target.otherPlayer(player);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>
@@ -124,14 +124,16 @@ namespace Power4Test
         [TestMethod()]
         public void runTest()
         {
-            IPlayer[] p = null; // TODO: Initialize to an appropriate value
-            IArrayFormatter format = null; // TODO: Initialize to an appropriate value
-            IArrayStock stock = null; // TODO: Initialize to an appropriate value
-            IOutput output = null; // TODO: Initialize to an appropriate value
-            IInput input = null; // TODO: Initialize to an appropriate value
-            Power4.Power4 target = new Power4.Power4(p, format, stock, output, input); // TODO: Initialize to an appropriate value
+            System.Collections.Generic.List<IToken> table = new System.Collections.Generic.List<IToken>();
+            IToken empty = new Token();
+            IPlayer[] p = new IPlayer[2];
+
+            IArrayFormatter format = new ArrayFormat();
+            IArrayStock stock = new ArrayStock(10, 10, empty);
+            IOutput output = new ColorOutput(table);
+            IInput input = new KeyboardInput();
+            Power4.Power4 target = new Power4.Power4(p, format, stock, output, input);
             target.run();
-            Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
         /// <summary>
