@@ -1,6 +1,8 @@
 ﻿using Power4;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
+using Autofac;
 
 namespace Power4Test
 {
@@ -11,9 +13,27 @@ namespace Power4Test
     ///to contain all Power4Test Unit Tests
     ///</summary>
     [TestClass()]
-    public class Power4Test
+    public class Power4Test : ContainerTest
     {
+        class FakePlayer : Player
+        {
+            Stack<Token> _stack = new Stack<Token>();
 
+            public FakePlayer() : base(null, 2)
+            {
+
+            }
+        }
+
+        class FakeInput : ColorOutput
+        {
+            Stack<ColorOutput> _stack = new Stack<ColorOutput>();
+
+            public FakeInput() : base(null)
+            {
+                _stack.Push(null);
+            }
+        }
 
         private TestContext testContextInstance;
 
@@ -70,15 +90,18 @@ namespace Power4Test
         [TestMethod()]
         public void Power4ConstructorTest()
         {
-            System.Collections.Generic.List<IToken> table = new System.Collections.Generic.List<IToken>();
-            IToken empty = new Token();
-            IPlayer[] p = new IPlayer[2]; 
+            var container = CreateContainer(builder =>
+            {
+                builder.RegisterType<FakePlayer>().As<IPlayer>().SingleInstance();
+                builder.RegisterType<FakeInput>().As<IOutput>().SingleInstance();
 
-            IArrayFormatter format = new ArrayFormat();
-            IArrayStock stock = new ArrayStock(10, 10, empty);
-            IOutput output = new ColorOutput(table); 
-            IInput input = new KeyboardInput();
-            Power4.Power4 target = new Power4.Power4(p, format, stock, output, input);
+            });
+            var runner = container.Resolve<Power4.Power4>();
+            
+            runner.run();
+            // var inputer = (FakeInput)container.Resolve<KeyboardInput>();
+            // Assert.AreEqual(5, inputer.Result.Count);
+
         }
 
         /// <summary>
@@ -124,6 +147,11 @@ namespace Power4Test
         [TestMethod()]
         public void runTest()
         {
+            var container = CreateContainer(Builder =>
+                {
+                    
+
+                });
             System.Collections.Generic.List<IToken> table = new System.Collections.Generic.List<IToken>();
             IToken empty = new Token();
             IPlayer[] p = new IPlayer[2];
