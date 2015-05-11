@@ -28,8 +28,8 @@ Durant le projet, nous avons du faire face à certaines difficultés:
 ## Tests unitaires
 
 Afin que chacune des fonctions du Puissance4 puisse être testée, nous avons mis en place une série de tests unitaires permettant d'éviter les régressions à chaque mise à jour du projet.
-En effet, ce sont ces tests unitaires qui nous permettaient de vérifier si une fonctions retournait bien le résultat attendu.
-Grâce à cela, le projet pouvait être testé dans son intégralité avant chaque "release" sur le Repository Github.
+En effet, ce sont ces tests unitaires qui nous permettaient de vérifier si une fonction retournait bien le résultat attendu.
+Grâce à cela, le projet pouvait être testé en partie dans son intégralité avant chaque "release" sur le Repository Github. La classe Power4, qui contenait la methode Run(), ne fut pas vérifier. En effet, comme vu pendant le cours, nous devions utilisé des "Container" qui implementait les Interfaces une seule fois. Cela fut difficile à coder. Seul la classe ContainerTest fut établit.
 
 ## Feature Bonus
 
