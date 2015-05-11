@@ -40,6 +40,10 @@ Cette fonctionnalité a été relativement longue à implémenter dans le sens o
 
 ## Ecrans de l'application
 
+## Diagramme de classes
+
+![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/DCPuissance4.png)
+
 * Ecran d'accueil
   
 ![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenAccueil.png)
