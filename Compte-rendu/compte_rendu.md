@@ -38,6 +38,24 @@ La classe Power4, qui contenait la methode Run(), ne fut pas vérifier. En effet
 La feature bonus consistait à indiquer au joueur la possibilité de placer un jeton dans la grille afin d'avoir un alignement de 3 jetons ou plus.
 Cette fonctionnalité a été relativement longue à implémenter dans le sens où il a fallu totalement revoir le système d'analyse de la grille de jeu. En effet, pour vérifier s'il y avait une victoire, la fonction checkEnd se basait sur le dernier jeton joué. Or, pour cette fonctionnalité il a fallu prendre en compte la totalité du tableau à 2 dimensions, ce qui rendait la tâche plus complexe que prévu.
 
+## Ecrans de l'application
+
+Ecran d'accueil
+![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenAccueil.png)
+
+Ecran grille vide
+![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenGrilleVide.png)
+
+Ecran grille remplie
+![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenGrilleRemplie.png)
+
+Ecran des erreurs possibles
+![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenErreur.png)
+
+Ecran de victoire
+![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenErreur.png)
+
+
 ## Conclusion
 
 Durant la réalisation de ce projet Puissance4, nous avons beaucoup appris. Tout d'abord, nous avons pu tous nous familiariser avec l'IDE Visual Studio afin de développer en C#, langage également découvert en même temps que Visual Studio pour l'ensemble de notre groupe.
