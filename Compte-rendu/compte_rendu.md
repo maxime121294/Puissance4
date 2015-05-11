@@ -40,19 +40,19 @@ Cette fonctionnalité a été relativement longue à implémenter dans le sens o
 
 ## Ecrans de l'application
 
-Ecran d'accueil
+*Ecran d'accueil
 ![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenAccueil.png)
 
-Ecran grille vide
+*Ecran grille vide
 ![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenGrilleVide.png)
 
-Ecran grille remplie
+*Ecran grille remplie
 ![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenGrilleRemplie.png)
 
-Ecran des erreurs possibles
+*Ecran des erreurs possibles
 ![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenErreur.png)
 
-Ecran de victoire
+*Ecran de victoire
 ![](https://github.com/maxime121294/Puissance4/blob/master/Compte-rendu/Images/ScreenErreur.png)
 
 
