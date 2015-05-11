@@ -24,7 +24,7 @@ Durant le projet, nous avons du faire face à certaines difficultés:
 * Pour certains membre de l'équipe, l'utilisation de Git et Github n'était pas simple au départ
 * Il a également fallu s'habituer au langage C# qui nous était alors inconnu à tous
 * Pour certains, l'utilisation de Visual Studio sous Mac OS était un vrai calvaire
-* La partie rédaction du cachier des recettes était plus complexe que celle du cachier des charges. En effet, nous n'avions pas en main un "modèle" précis du plan et une recherche plus poussée sur internet était nécessaire contrairement aux modèles du cahier des charges qui étaient largement plus répandus.
+* La partie rédaction du cahier des recettes était plus complexe que celle du cahier des charges. En effet, nous n'avions pas en main un "modèle" précis du plan et une recherche plus poussée sur internet était nécessaire contrairement aux modèles du cahier des charges qui étaient largement plus répandus.
 
 ## Tests unitaires
 
