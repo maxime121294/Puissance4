@@ -25,6 +25,7 @@ Durant le projet, nous avons du faire face à certaines difficultés:
 * Il a également fallu s'habituer au langage C# qui nous était alors inconnu à tous
 * Pour certains, l'utilisation de Visual Studio sous Mac OS était un vrai calvaire
 * La partie rédaction du cahier des recettes était plus complexe que celle du cahier des charges. En effet, nous n'avions pas en main un "modèle" précis du plan et une recherche plus poussée sur internet était nécessaire contrairement aux modèles du cahier des charges qui étaient largement plus répandus.
+* Perte de temps énorme dûe à la lenteur et aux plantages (plusieurs documents non sauvegardés au moment du "bug") des PC à l'iut.
 
 ## Tests unitaires
 
@@ -40,7 +41,7 @@ Cette fonctionnalité a été relativement longue à implémenter dans le sens o
 ## Conclusion
 
 Durant la réalisation de ce projet Puissance4, nous avons beaucoup appris. Tout d'abord, nous avons pu tous nous familiariser avec l'IDE Visual Studio afin de développer en C#, langage également découvert en même temps que Visual Studio pour l'ensemble de notre groupe.
-De plus, Git et Github ont été très intéressant à prendre en main, bien qu'un peu difficile au premier abord.
+De plus, Git et Github ont été très intéressant à prendre en main, bien qu'un peu difficile au premier abord. Pour certains cela a été vraiment une décourverte car Github est pratique. Il permet de travailler chez soi tout en ayant différentes versions des documents sauvegardés automatiquement.
 Dans l'ensemble, il y avait une bonne coordination dans les rôles de chacun des membres du groupe et une bonne entente au sein de l'équipe était présente.
 Le fait de devoir coder de manière SRP tout en faisant des tests unitaires était relativement nouveau pour nous (du moins, dans la pratique).
 Mais c'est surtout l'aspect MOA/MOE qui changeait radicalement des autres projets de développement informatique que nous avions déjà réalisés au cours de l'année.
