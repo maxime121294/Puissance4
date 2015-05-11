@@ -68,3 +68,4 @@ De plus, Git et Github ont été très intéressant à prendre en main, bien qu'
 Dans l'ensemble, il y avait une bonne coordination dans les rôles de chacun des membres du groupe et une bonne entente au sein de l'équipe était présente.
 Le fait de devoir coder de manière SRP tout en faisant des tests unitaires était relativement nouveau pour nous (du moins, dans la pratique).
 Mais c'est surtout l'aspect MOA/MOE qui changeait radicalement des autres projets de développement informatique que nous avions déjà réalisés au cours de l'année.
+Par ailleurs, l'approche du cycle est V est pertinente sur un projet de cette envergure. En effet, les besoins exprimés sont bien délimités et ne nécessitent pas un développement sur une longue durée. Par contre une approche agile est mieux adaptée pour les projets dont les spécifications fonctionnelles sont étendues et les retours utilisateurs primordiaux.
