@@ -1,5 +1,6 @@
 *.cache
 *.exe*
+!Puissance4.exe
 *.suo
 *.db
 *.pdb
